@@ -7,7 +7,7 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         continueButton.SetActive(false);
-        Invoke(nameof(ShowButton), 5f);
+        Invoke(nameof(ShowButton), 2f);
     }
 
     void ShowButton()

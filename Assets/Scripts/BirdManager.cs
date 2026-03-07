@@ -72,4 +72,21 @@ public class BirdManager : MonoBehaviour
             spawnedBirds[i].transform.position = queuePositions[queueIndex].position;
         }
     }
+
+    public void AddBirdToQueue(BaseBird newBirdPrefab)
+    {
+        Vector3 pos = queuePositions[Mathf.Min(spawnedBirds.Count, queuePositions.Length - 1)].position;
+
+        BaseBird bird = Instantiate(
+            newBirdPrefab,
+            pos,
+            Quaternion.identity
+        );
+
+        bird.SetManager(this);
+
+        spawnedBirds.Add(bird);
+
+        UpdateQueuePositions();
+    }
 }

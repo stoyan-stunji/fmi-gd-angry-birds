@@ -26,13 +26,12 @@ public class BirdCageBlock : Block
 
         addedToRoster = true;
 
-        // Find the BirdManager in the scene
         BirdManager manager = FindObjectOfType<BirdManager>();
+
         if (manager != null)
         {
-            // Add the prefab to the BirdManager's list
-            manager.birdPrefabs.Add(chickPrefab);
-            Debug.Log("Chick added to BirdManager roster!");
+            manager.AddBirdToQueue(chickPrefab);
+            Debug.Log("Chick added to BirdManager queue!");
         }
     }
 }
