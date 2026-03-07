@@ -40,7 +40,7 @@ public abstract class BaseBird : MonoBehaviour
             ActivatePower();
         }
 
-        if (waitingForStop && rb.velocity.magnitude < 0.15f)
+        if (waitingForStop && rb.velocity.magnitude < 0.55f)
         {
             waitingForStop = false;
             StartCoroutine(ReturnNextBird());
@@ -59,7 +59,7 @@ public abstract class BaseBird : MonoBehaviour
 
     IEnumerator ReturnNextBird()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         manager.LoadNextBird();
 
