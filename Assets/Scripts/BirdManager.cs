@@ -21,6 +21,7 @@ public class BirdManager : MonoBehaviour
         if (currentBird >= birdPrefabs.Count)
         {
             Debug.Log("No birds left!");
+            FindObjectOfType<LevelManager>().Lose();
             return;
         }
 
