@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\Duck.cs" />
     <Compile Include="Assets\Scripts\Peacock.cs" />
     <Compile Include="Assets\Scripts\Slingshot.cs" />
-    <Compile Include="Assets\Scripts\Pig.cs" />
     <Compile Include="Assets\Scripts\Chick.cs" />
     <Compile Include="Assets\Scripts\Chicken.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Assets\Scripts\Pidgeon.cs" />
     <Compile Include="Assets\Scripts\BlueBomb.cs" />
     <Compile Include="Assets\Scripts\MiniDuck.cs" />
+    <Compile Include="Assets\Scripts\Boar.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

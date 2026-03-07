@@ -6,7 +6,8 @@ public class BirdManager : MonoBehaviour
     public Slingshot slingshot;
     public CameraFollow cameraFollow;
 
-    public List<BaseBird> birds;
+    // Store bird **prefabs**, not instances
+    public List<BaseBird> birdPrefabs;
 
     private int currentBird = 0;
 
@@ -17,13 +18,18 @@ public class BirdManager : MonoBehaviour
 
     public void LoadNextBird()
     {
-        if (currentBird >= birds.Count)
+        if (currentBird >= birdPrefabs.Count)
         {
             Debug.Log("No birds left!");
             return;
         }
 
-        BaseBird bird = birds[currentBird];
+        // Instantiate a new bird from prefab
+        BaseBird bird = Instantiate(
+            birdPrefabs[currentBird],
+            slingshot.launchPoint.position,
+            Quaternion.identity
+        );
 
         bird.SetManager(this);
 
