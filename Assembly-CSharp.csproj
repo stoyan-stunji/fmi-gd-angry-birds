@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Chick.cs" />
     <Compile Include="Assets\Scripts\Chicken.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\TNTBlock.cs" />
     <Compile Include="Assets\Scripts\EggBomb.cs" />
     <Compile Include="Assets\Scripts\Pidgeon.cs" />
     <Compile Include="Assets\Scripts\BlueBomb.cs" />
