@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Duck.cs" />
     <Compile Include="Assets\Scripts\Slingshot.cs" />
     <Compile Include="Assets\Scripts\Pig.cs" />
+    <Compile Include="Assets\Scripts\Chick.cs" />
     <Compile Include="Assets\Scripts\Chicken.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\EggBomb.cs" />
