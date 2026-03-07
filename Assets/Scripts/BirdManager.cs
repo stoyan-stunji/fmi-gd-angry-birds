@@ -6,7 +6,7 @@ public class BirdManager : MonoBehaviour
     public Slingshot slingshot;
     public CameraFollow cameraFollow;
 
-    public List<Bird> birds;
+    public List<BaseBird> birds;
 
     private int currentBird = 0;
 
@@ -23,13 +23,13 @@ public class BirdManager : MonoBehaviour
             return;
         }
 
-        Bird bird = birds[currentBird];
+        BaseBird bird = birds[currentBird];
 
         bird.SetManager(this);
 
         slingshot.SetBird(bird);
 
-        cameraFollow.SetTarget(bird.transform);  
+        cameraFollow.SetTarget(bird.transform);
 
         currentBird++;
     }

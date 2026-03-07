@@ -6,7 +6,7 @@ public class Slingshot : MonoBehaviour
     public float maxDistance = 2f;
     public float launchPower = 8f;
 
-    private Bird currentBird;
+    private BaseBird currentBird;
     private bool dragging = false;
 
     void Update()
@@ -40,10 +40,9 @@ public class Slingshot : MonoBehaviour
         }
     }
 
-    public void SetBird(Bird bird)
+    public void SetBird(BaseBird bird)
     {
         currentBird = bird;
-
         bird.transform.position = launchPoint.position;
     }
 }
