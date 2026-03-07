@@ -6,38 +6,70 @@ public class BirdManager : MonoBehaviour
     public Slingshot slingshot;
     public CameraFollow cameraFollow;
 
-    // Store bird **prefabs**, not instances
     public List<BaseBird> birdPrefabs;
+
+    public Transform[] queuePositions;
+
+    private List<BaseBird> spawnedBirds = new List<BaseBird>();
 
     private int currentBird = 0;
 
     void Start()
     {
+        SpawnBirdQueue();
         LoadNextBird();
+    }
+
+    void SpawnBirdQueue()
+    {
+        for (int i = 0; i < birdPrefabs.Count; i++)
+        {
+            Vector3 pos = queuePositions[Mathf.Min(i, queuePositions.Length - 1)].position;
+
+            BaseBird bird = Instantiate(
+                birdPrefabs[i],
+                pos,
+                Quaternion.identity
+            );
+
+            bird.SetManager(this);
+
+            spawnedBirds.Add(bird);
+        }
     }
 
     public void LoadNextBird()
     {
-        if (currentBird >= birdPrefabs.Count)
+        if (currentBird >= spawnedBirds.Count)
         {
             Debug.Log("No birds left!");
             FindObjectOfType<LevelManager>().Lose();
             return;
         }
 
-        // Instantiate a new bird from prefab
-        BaseBird bird = Instantiate(
-            birdPrefabs[currentBird],
-            slingshot.launchPoint.position,
-            Quaternion.identity
-        );
+        BaseBird bird = spawnedBirds[currentBird];
 
-        bird.SetManager(this);
+        bird.transform.position = slingshot.launchPoint.position;
 
         slingshot.SetBird(bird);
 
         cameraFollow.SetTarget(bird.transform);
 
         currentBird++;
+
+        UpdateQueuePositions();
+    }
+
+    void UpdateQueuePositions()
+    {
+        for (int i = currentBird; i < spawnedBirds.Count; i++)
+        {
+            int queueIndex = i - currentBird;
+
+            if (queueIndex >= queuePositions.Length)
+                break;
+
+            spawnedBirds[i].transform.position = queuePositions[queueIndex].position;
+        }
     }
 }
