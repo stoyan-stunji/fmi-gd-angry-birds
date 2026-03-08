@@ -13,12 +13,12 @@ public class LevelManager : MonoBehaviour
     public float delayBeforeNextLevel = 2f;
     public float delayBeforeRestart = 2f;
 
-    private Pig[] pigs;
+    private Boar[] pigs;
     private bool gameEnded = false;
 
     void Start()
     {
-        pigs = FindObjectsOfType<Pig>();
+        pigs = FindObjectsOfType<Boar>();
 
         winUI.SetActive(false);
         loseUI.SetActive(false);
@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     {
         if (gameEnded) return;
 
-        pigs = FindObjectsOfType<Pig>();
+        pigs = FindObjectsOfType<Boar>();
 
         if (pigs.Length == 0)
         {

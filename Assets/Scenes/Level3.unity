@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 8980225}
   - component: {fileID: 8980224}
   - component: {fileID: 8980223}
+  - component: {fileID: 8980229}
   m_Layer: 6
   m_Name: Boar1
   m_TagString: Untagged
@@ -171,6 +172,8 @@ MonoBehaviour:
   health: 3
   idleSprite: {fileID: 21300000, guid: f88a2dfaf09f3144798292a66d0a723e, type: 3}
   hurtSprite: {fileID: 21300000, guid: 0aaef60da02820b40a4007e3a51ee51d, type: 3}
+  collisionSfx: {fileID: 8300000, guid: a141a8a52246e5142bc29bc0b036e08f, type: 3}
+  deathSfx: {fileID: 8300000, guid: bb20a4b82c67b43499f3109ff99b496c, type: 3}
 --- !u!58 &8980225
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -300,6 +303,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 319230299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8980229
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980222}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 30
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &130179815
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +866,7 @@ GameObject:
   - component: {fileID: 263604434}
   - component: {fileID: 263604433}
   - component: {fileID: 263604432}
+  - component: {fileID: 263604438}
   m_Layer: 6
   m_Name: CommandoBoar
   m_TagString: Untagged
@@ -801,6 +901,8 @@ MonoBehaviour:
   health: 4
   idleSprite: {fileID: 21300000, guid: 0929f5d811031e844a0b44a98332c4d1, type: 3}
   hurtSprite: {fileID: 21300000, guid: 7205d599f612eca478f7c4483e6138c8, type: 3}
+  collisionSfx: {fileID: 8300000, guid: b9a88610622eb80418d7dec919021a89, type: 3}
+  deathSfx: {fileID: 8300000, guid: a141a8a52246e5142bc29bc0b036e08f, type: 3}
 --- !u!58 &263604434
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -930,6 +1032,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 319230299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &263604438
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263604431}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 30
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &275067284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +2179,6 @@ MonoBehaviour:
   launchSfx: {fileID: 8300000, guid: b4d1d8c84ba32fd4a83d0105da518708, type: 3}
   powerSfx: {fileID: 8300000, guid: 83c6dd01dced792489ddf33600ae688d, type: 3}
   collisionSfx: {fileID: 8300000, guid: 190f63a7ba8be1c42866d256ac489863, type: 3}
-  disappearSfx: {fileID: 8300000, guid: 18544a42ad2ce7e4bb205186554ed303, type: 3}
   idleSprite: {fileID: 21300000, guid: e54273f146e27e249b4386876c2be114, type: 3}
   launchedSprite: {fileID: 21300000, guid: eaadf99de0fc7174a91afe06ff6d1d04, type: 3}
 --- !u!50 &878261627
@@ -2294,7 +2491,6 @@ MonoBehaviour:
   launchSfx: {fileID: 8300000, guid: 4fdab6cdd684b8d42ac29b6adc938718, type: 3}
   powerSfx: {fileID: 8300000, guid: 48bae6b0e440da547a4c7ed47654ed90, type: 3}
   collisionSfx: {fileID: 8300000, guid: c256df71913410644863a198fa54f5d5, type: 3}
-  disappearSfx: {fileID: 8300000, guid: 18544a42ad2ce7e4bb205186554ed303, type: 3}
 --- !u!58 &1014351640
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2698,6 +2894,7 @@ GameObject:
   - component: {fileID: 1148970965}
   - component: {fileID: 1148970964}
   - component: {fileID: 1148970963}
+  - component: {fileID: 1148970968}
   m_Layer: 6
   m_Name: Boar2
   m_TagString: Untagged
@@ -2747,6 +2944,8 @@ MonoBehaviour:
   health: 3
   idleSprite: {fileID: 21300000, guid: f88a2dfaf09f3144798292a66d0a723e, type: 3}
   hurtSprite: {fileID: 21300000, guid: 0aaef60da02820b40a4007e3a51ee51d, type: 3}
+  collisionSfx: {fileID: 8300000, guid: da3615f7e2607aa40b3e4b17ced6bcac, type: 3}
+  deathSfx: {fileID: 8300000, guid: b9a88610622eb80418d7dec919021a89, type: 3}
 --- !u!58 &1148970965
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2861,6 +3060,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1148970968
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148970961}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 30
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1320392486
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,7 +3472,6 @@ MonoBehaviour:
   launchSfx: {fileID: 8300000, guid: 4fdab6cdd684b8d42ac29b6adc938718, type: 3}
   powerSfx: {fileID: 8300000, guid: 48bae6b0e440da547a4c7ed47654ed90, type: 3}
   collisionSfx: {fileID: 8300000, guid: c256df71913410644863a198fa54f5d5, type: 3}
-  disappearSfx: {fileID: 8300000, guid: 18544a42ad2ce7e4bb205186554ed303, type: 3}
   miniDuckPrefab: {fileID: 1014351638}
   idleSprite: {fileID: 21300000, guid: 4a05f8a5cb91aee49a6a99e060bcf2d1, type: 3}
   launchedSprite: {fileID: 21300000, guid: d82a772403a475e4cb6fd40f018b467a, type: 3}

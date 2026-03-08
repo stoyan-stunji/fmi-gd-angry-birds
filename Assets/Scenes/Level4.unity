@@ -2203,6 +2203,7 @@ GameObject:
   - component: {fileID: 564592368}
   - component: {fileID: 564592367}
   - component: {fileID: 564592366}
+  - component: {fileID: 564592372}
   m_Layer: 6
   m_Name: ForemanBoar
   m_TagString: Untagged
@@ -2237,6 +2238,8 @@ MonoBehaviour:
   health: 8
   idleSprite: {fileID: 21300000, guid: 2920131b8825d224b8e4cb694496641c, type: 3}
   hurtSprite: {fileID: 21300000, guid: 740d17160de6f794da208580b3a930f7, type: 3}
+  collisionSfx: {fileID: 8300000, guid: a141a8a52246e5142bc29bc0b036e08f, type: 3}
+  deathSfx: {fileID: 8300000, guid: bb20a4b82c67b43499f3109ff99b496c, type: 3}
 --- !u!58 &564592368
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2366,6 +2369,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1318717955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &564592372
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564592365}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 0.9
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 30
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &639782979
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +5120,7 @@ GameObject:
   - component: {fileID: 1630884575}
   - component: {fileID: 1630884574}
   - component: {fileID: 1630884573}
+  - component: {fileID: 1630884579}
   m_Layer: 6
   m_Name: CommandoBoar
   m_TagString: Untagged
@@ -5055,6 +5155,8 @@ MonoBehaviour:
   health: 5
   idleSprite: {fileID: 21300000, guid: 0929f5d811031e844a0b44a98332c4d1, type: 3}
   hurtSprite: {fileID: 21300000, guid: 7205d599f612eca478f7c4483e6138c8, type: 3}
+  collisionSfx: {fileID: 8300000, guid: da3615f7e2607aa40b3e4b17ced6bcac, type: 3}
+  deathSfx: {fileID: 8300000, guid: b9a88610622eb80418d7dec919021a89, type: 3}
 --- !u!58 &1630884575
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5184,6 +5286,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1318717955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1630884579
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630884572}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 30
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1639911090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5649,7 +5847,6 @@ MonoBehaviour:
   launchSfx: {fileID: 8300000, guid: 2b2ff5d92ab87fe459bb7a7f796f4c7e, type: 3}
   powerSfx: {fileID: 8300000, guid: 779397e3a0d6fdf41acf436d62ebca2b, type: 3}
   collisionSfx: {fileID: 8300000, guid: 9b0e73dc077eb654a865b1ce2a3f82ab, type: 3}
-  disappearSfx: {fileID: 0}
   speedMultiplier: 2
   idleSprite: {fileID: 21300000, guid: c724ed1451386c44d8f52e70771d72d7, type: 3}
   launchedSprite: {fileID: 21300000, guid: 51735193327fe9d4aad7d996aeeecfe8, type: 3}
