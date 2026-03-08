@@ -2,53 +2,42 @@ using UnityEngine;
 
 public class BlueBomb : MonoBehaviour
 {
-    public float explosionRadius = 2f;     // How far the explosion affects
-    public float explosionForce = 8f;      // Force applied to nearby objects
-    public LayerMask affectedLayers;       // Layers that can be pushed/damaged
-    public float armDelay = 0.2f;          // Seconds before the bomb can explode
-
+    public float explosionRadius = 2f;     
+    public float explosionForce = 8f;     
+    public LayerMask affectedLayers;       
+    public float armDelay = 0.2f;          
     private bool armed = false;
 
-    void Start()
-    {
-        // Delay before the bomb can explode
+    void Start() {
         Invoke(nameof(Arm), armDelay);
     }
 
-    void Arm()
-    {
+    void Arm() {
         armed = true;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (!armed) return; // ignore collisions until armed
-
+    void OnCollisionEnter2D(Collision2D collision) {   
+        if (!armed) {
+            return;
+        }
         Explode();
     }
 
-    void Explode()
-    {
-        // Find all colliders in the explosion radius
+    void Explode() {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius, affectedLayers);
 
-        foreach (Collider2D col in colliders)
-        {
+        foreach (Collider2D col in colliders) {
             Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
+            if (rb != null) {
                 Vector2 direction = rb.position - (Vector2)transform.position;
                 rb.AddForce(direction.normalized * explosionForce, ForceMode2D.Impulse);
             }
         }
 
-        // Optional: play explosion effect here (particles, sound)
         Destroy(gameObject);
     }
 
-    // Optional: visualize explosion radius in editor
-    void OnDrawGizmosSelected()
-    {
+    void OnDrawGizmosSelected() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }

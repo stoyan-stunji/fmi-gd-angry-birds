@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class BaseBird : MonoBehaviour
-{
+public abstract class BaseBird : MonoBehaviour {
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
 
@@ -12,36 +11,28 @@ public abstract class BaseBird : MonoBehaviour
 
     protected BirdManager manager;
 
-    protected virtual void Awake()
-    {
+    protected virtual void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-
         rb.isKinematic = true;
     }
 
-    public void SetManager(BirdManager m)
-    {
+    public void SetManager(BirdManager m) {
         manager = m;
     }
 
-    public virtual void Launch(Vector2 force)
-    {
+    public virtual void Launch(Vector2 force) {
         rb.isKinematic = false;
         rb.AddForce(force, ForceMode2D.Impulse);
-
         launched = true;
     }
 
-    protected virtual void Update()
-    {
-        if (launched && !powered && Input.GetMouseButtonDown(0))
-        {
+    protected virtual void Update() {
+        if (launched && !powered && Input.GetMouseButtonDown(0)) {
             ActivatePower();
         }
 
-        if (waitingForStop && rb.velocity.magnitude < 0.55f)
-        {
+        if (waitingForStop && rb.velocity.magnitude < 0.55f) {
             waitingForStop = false;
             StartCoroutine(ReturnNextBird());
         }
@@ -49,20 +40,15 @@ public abstract class BaseBird : MonoBehaviour
 
     protected abstract void ActivatePower();
 
-    protected virtual void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (launched)
-        {
+    protected virtual void OnCollisionEnter2D(Collision2D collision) {
+        if (launched) {
             waitingForStop = true;
         }
     }
 
-    IEnumerator ReturnNextBird()
-    {
+    IEnumerator ReturnNextBird() {
         yield return new WaitForSeconds(2f);
-
         manager.LoadNextBird();
-
         Destroy(gameObject);
     }
 }

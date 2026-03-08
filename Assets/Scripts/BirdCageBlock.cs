@@ -1,52 +1,46 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BirdCageBlock : Block
-{
+public class BirdCageBlock : Block {
     [Header("Bird Settings")]
-    public DoNothingBird chickPrefab;  // Assign your DoNothingBird prefab here
-    private bool addedToRoster = false;  // Prevent adding multiple times
+    public Chick chickPrefab;  
+    private bool addedToRoster = false;  
 
     [Header("UI Images")]
-    public Image chickInCage;       // Assign the UI image of the chick in the cage
-    public Image chickOutOfCage;    // Assign the UI image of the chick out of the cage
+    public Image chickInCage;      
+    public Image chickOutOfCage;    
 
-    public override void TakeDamage(float damageAmount)
-    {
+    public override void TakeDamage(float damageAmount) {
         base.TakeDamage(damageAmount);
 
-        if (currentHealth <= 0 && !addedToRoster)
-        {
+        if (currentHealth <= 0 && !addedToRoster) {
             AddChickToRoster();
             UpdateChickUI();
         }
     }
 
-    private void AddChickToRoster()
-    {
+    private void AddChickToRoster() {
         if (chickPrefab == null)
         {
-            Debug.LogWarning("Chick prefab not assigned to BirdCageBlock!");
+            Debug.LogWarning("BirdCageBlock::Chick prefab NOT assigned to BirdCageBlock");
             return;
         }
 
         addedToRoster = true;
-
-        BirdManager manager = FindObjectOfType<BirdManager>();
-
-        if (manager != null)
-        {
+        BirdManager manager = FindObjectOfType<BirdManager>(); 
+        if (manager != null) {
             manager.AddBirdToQueue(chickPrefab);
-            Debug.Log("Chick added to BirdManager queue!");
+            Debug.Log("BirdCageBlock::Chick added to BirdManager queue");
         }
     }
 
-    private void UpdateChickUI()
-    {
-        if (chickInCage != null)
-            chickInCage.enabled = false;   // Hide chick in cage
+    private void UpdateChickUI() {
+        if (chickInCage != null) {
+            chickInCage.enabled = false;   
+        }
 
-        if (chickOutOfCage != null)
-            chickOutOfCage.enabled = true; // Show chick out of cage
+        if (chickOutOfCage != null) {
+            chickOutOfCage.enabled = true; 
+        }
     }
 }
