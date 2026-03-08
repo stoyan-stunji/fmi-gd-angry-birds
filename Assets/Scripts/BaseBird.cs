@@ -11,11 +11,12 @@ public abstract class BaseBird : MonoBehaviour
     [SerializeField] protected AudioClip launchSfx;
     [SerializeField] protected AudioClip powerSfx;
     [SerializeField] protected AudioClip collisionSfx;
-    [SerializeField] protected AudioClip disappearSfx;
 
     protected bool launched = false;
     protected bool powered = false;
     protected bool waitingForStop = false;
+
+    protected bool collisionSoundPlayed = false;
 
     protected BirdManager manager;
 
@@ -63,15 +64,19 @@ public abstract class BaseBird : MonoBehaviour
     {
         if (launched)
         {
-            PlaySound(collisionSfx);
+
+            if (!collisionSoundPlayed)
+            {
+                PlaySound(collisionSfx);
+                collisionSoundPlayed = true;
+            }
+
             waitingForStop = true;
         }
     }
 
     IEnumerator ReturnNextBird()
     {
-        PlaySound(disappearSfx);
-
         yield return new WaitForSeconds(2f);
 
         manager.LoadNextBird();
