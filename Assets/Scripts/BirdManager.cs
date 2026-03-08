@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class BirdManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class BirdManager : MonoBehaviour
 
     public Transform[] queuePositions;
 
+    [Header("UI")]
+    public Image[] birdIcons; // assign icons manually in inspector
+
     private List<BaseBird> spawnedBirds = new List<BaseBird>();
 
     private int currentBird = 0;
@@ -18,6 +22,7 @@ public class BirdManager : MonoBehaviour
     {
         SpawnBirdQueue();
         LoadNextBird();
+        UpdateBirdUI();
     }
 
     void SpawnBirdQueue()
@@ -58,6 +63,7 @@ public class BirdManager : MonoBehaviour
         currentBird++;
 
         UpdateQueuePositions();
+        UpdateBirdUI();
     }
 
     void UpdateQueuePositions()
@@ -88,5 +94,21 @@ public class BirdManager : MonoBehaviour
         spawnedBirds.Add(bird);
 
         UpdateQueuePositions();
+        UpdateBirdUI();
+    }
+
+    void UpdateBirdUI()
+    {
+        for (int i = 0; i < birdIcons.Length; i++)
+        {
+            if (i < spawnedBirds.Count && i >= currentBird)
+            {
+                birdIcons[i].enabled = true;
+            }
+            else
+            {
+                birdIcons[i].enabled = false;
+            }
+        }
     }
 }
