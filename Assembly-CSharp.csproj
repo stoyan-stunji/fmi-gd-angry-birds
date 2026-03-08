@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\BirdCageBlock.cs" />
     <Compile Include="Assets\Scripts\BirdUIManager.cs" />
     <Compile Include="Assets\Scripts\Peacock.cs" />
+    <Compile Include="Assets\Scripts\SpriteChangerUI.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Slingshot.cs" />
     <Compile Include="Assets\Scripts\Pig.cs" />
