@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchSfx: {fileID: 8300000, guid: 4fdab6cdd684b8d42ac29b6adc938718, type: 3}
   powerSfx: {fileID: 8300000, guid: 48bae6b0e440da547a4c7ed47654ed90, type: 3}
-  collisionSfx: {fileID: 8300000, guid: c256df71913410644863a198fa54f5d5, type: 3}
+  collisionSfx: {fileID: 0}
 --- !u!58 &1014351640
 CircleCollider2D:
   m_ObjectHideFlags: 0
