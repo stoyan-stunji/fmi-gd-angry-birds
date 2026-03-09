@@ -64,7 +64,6 @@ public abstract class BaseBird : MonoBehaviour
     {
         if (launched)
         {
-
             if (!collisionSoundPlayed)
             {
                 PlaySound(collisionSfx);
@@ -79,8 +78,8 @@ public abstract class BaseBird : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        manager.LoadNextBird();
 
+        manager.LoadNextBird();
         Destroy(gameObject);
     }
 
