@@ -1,17 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
     [Header("UI")]
-    public GameObject winUI;
-    public GameObject loseUI;
+    public GameObject endLevelUI;           // panel that contains all buttons
+    public GameObject winMessage;           // optional text/object for win
+    public GameObject loseMessage;          // optional text/object for lose
 
     [Header("Scene Settings")]
-    public string nextLevelName;        // <-- Set next level name in Inspector
-    public float delayBeforeNextLevel = 2f;
-    public float delayBeforeRestart = 2f;
+    public string nextLevelName;            // set next level name in Inspector
 
     private Boar[] pigs;
     private bool gameEnded = false;
@@ -19,9 +17,10 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         pigs = FindObjectsOfType<Boar>();
+        endLevelUI.SetActive(false);
 
-        winUI.SetActive(false);
-        loseUI.SetActive(false);
+        if (winMessage != null) winMessage.SetActive(false);
+        if (loseMessage != null) loseMessage.SetActive(false);
     }
 
     void Update()
@@ -34,6 +33,20 @@ public class LevelManager : MonoBehaviour
         {
             Win();
         }
+
+        // Optional: Lose condition can be triggered elsewhere, e.g. no birds left
+    }
+
+    public void Win()
+    {
+        if (gameEnded) return;
+
+        gameEnded = true;
+
+        if (winMessage != null) winMessage.SetActive(true);
+        if (loseMessage != null) loseMessage.SetActive(false);
+
+        ShowEndLevelUI();
     }
 
     public void Lose()
@@ -41,40 +54,20 @@ public class LevelManager : MonoBehaviour
         if (gameEnded) return;
 
         gameEnded = true;
-        loseUI.SetActive(true);
-        StartCoroutine(RestartLevelAfterDelay());
+
+        if (loseMessage != null) loseMessage.SetActive(true);
+        if (winMessage != null) winMessage.SetActive(false);
+
+        ShowEndLevelUI();
     }
 
-    void Win()
+    private void ShowEndLevelUI()
     {
-        if (gameEnded) return;
-
-        gameEnded = true;
-        winUI.SetActive(true);
-        StartCoroutine(LoadNextLevelAfterDelay());
+        if (endLevelUI != null)
+            endLevelUI.SetActive(true);
     }
 
-    IEnumerator RestartLevelAfterDelay()
-    {
-        yield return new WaitForSeconds(delayBeforeRestart);
-        RestartLevel();
-    }
-
-    IEnumerator LoadNextLevelAfterDelay()
-    {
-        yield return new WaitForSeconds(delayBeforeNextLevel);
-
-        if (!string.IsNullOrEmpty(nextLevelName))
-        {
-            SceneManager.LoadScene(nextLevelName);
-        }
-        else
-        {
-            Debug.LogWarning("Next level name not set! Reloading current level instead.");
-            RestartLevel();
-        }
-    }
-
+    // Button Functions
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -82,6 +75,14 @@ public class LevelManager : MonoBehaviour
 
     public void LevelSelect()
     {
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene("SelectLevel"); // make sure this scene exists
+    }
+
+    public void NextLevel()
+    {
+        if (!string.IsNullOrEmpty(nextLevelName))
+            SceneManager.LoadScene(nextLevelName);
+        else
+            Debug.LogWarning("Next level name not set!");
     }
 }
