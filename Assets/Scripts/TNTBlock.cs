@@ -1,19 +1,27 @@
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class TNTBlock : Block
 {
     [Header("Explosion Settings")]
-    public float explosionForce = 10f;
-    public float explosionRadius = 3f;
+    public float explosionForce = 5f;      // reduced force
+    public float explosionRadius = 2.5f;
     public LayerMask affectedLayers;
-    public GameObject explosionEffectPrefab; // optional particle effect
+
+    [Header("Explosion Visual")]
+    public Sprite explosionSprite;
+    public float explosionSpriteDuration = 0.15f;
+    public float explosionSpriteScale = 0.2f;
+
+    [Header("Sound")]
+    public AudioClip explosionSfx;
+
+    private bool exploded = false;
 
     public override void TakeDamage(float damageAmount)
     {
         base.TakeDamage(damageAmount);
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !exploded)
         {
             Explode();
         }
@@ -23,8 +31,7 @@ public class TNTBlock : Block
     {
         float impact = collision.relativeVelocity.magnitude;
 
-        // Optional: explode if impact is very strong
-        if (impact > 8f)
+        if (impact > 8f && !exploded)
         {
             Explode();
         }
@@ -32,32 +39,54 @@ public class TNTBlock : Block
 
     void Explode()
     {
-        // Spawn explosion effect
-        if (explosionEffectPrefab != null)
+        exploded = true;
+
+        // Play sound
+        if (explosionSfx != null)
+            AudioSource.PlayClipAtPoint(explosionSfx, transform.position);
+
+        // Small explosion sprite
+        if (explosionSprite != null)
         {
-            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            GameObject spriteObj = new GameObject("ExplosionSprite");
+            spriteObj.transform.position = transform.position;
+            spriteObj.transform.localScale = Vector3.one * explosionSpriteScale;
+
+            SpriteRenderer sr = spriteObj.AddComponent<SpriteRenderer>();
+            sr.sprite = explosionSprite;
+            sr.sortingOrder = 100;
+
+            Destroy(spriteObj, explosionSpriteDuration);
         }
 
-        // Apply force/damage to nearby objects
+        // Apply explosion
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius, affectedLayers);
 
         foreach (Collider2D col in colliders)
         {
-            Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb = col.attachedRigidbody;
+
             if (rb != null)
             {
                 Vector2 direction = rb.position - (Vector2)transform.position;
-                rb.AddForce(direction.normalized * explosionForce, ForceMode2D.Impulse);
+                float distance = direction.magnitude;
+
+                float forcePercent = 1 - (distance / explosionRadius);
+                float finalForce = explosionForce * forcePercent;
+
+                rb.AddForce(direction.normalized * finalForce, ForceMode2D.Impulse);
+
+                // Prevent crazy velocities
+                rb.velocity = Vector2.ClampMagnitude(rb.velocity, 15f);
             }
 
-            // Chain reaction: if another TNT block is nearby, explode it
+            // Controlled chain reaction
             TNTBlock tnt = col.GetComponent<TNTBlock>();
-            if (tnt != null && tnt != this)
+            if (tnt != null && tnt != this && !tnt.exploded)
             {
-                tnt.Explode();
+                tnt.Invoke("Explode", 0.05f); // delay prevents physics spike
             }
 
-            // Damage BaseBlocks
             Block block = col.GetComponent<Block>();
             if (block != null)
             {
@@ -68,7 +97,6 @@ public class TNTBlock : Block
         Destroy(gameObject);
     }
 
-    // Optional: visualize explosion radius
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

@@ -3,16 +3,24 @@ using UnityEngine;
 public class EggBomb : MonoBehaviour
 {
     [Header("Explosion Settings")]
-    public float explosionForce = 8f;
-    public float explosionRadius = 2f;
-    public LayerMask affectedLayers;  // Only objects on these layers are affected
-    public float armDelay = 0.2f;     // Delay before the bomb can explode
+    public float explosionForce = 9f;
+    public float explosionRadius = 2.5f;
+    public LayerMask affectedLayers;
+    public float armDelay = 0.2f;
+
+    [Header("Explosion Visual")]
+    public Sprite explosionSprite;
+    public float spriteDuration = 0.2f;
+    public float spriteScale = 0.25f;
+
+    [Header("Sound")]
+    public AudioClip explosionSfx;
 
     private bool armed = false;
+    private bool exploded = false;
 
     void Start()
     {
-        // Delay before bomb can explode (prevents exploding immediately)
         Invoke(nameof(Arm), armDelay);
     }
 
@@ -23,41 +31,59 @@ public class EggBomb : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!armed) return;
-
+        if (!armed || exploded) return;
         Explode();
     }
 
     void Explode()
     {
-        // Find all colliders in the explosion radius on the affected layers
+        exploded = true;
+
+        if (explosionSfx != null)
+            AudioSource.PlayClipAtPoint(explosionSfx, transform.position);
+
+        // Explosion sprite
+        if (explosionSprite != null)
+        {
+            GameObject spriteObj = new GameObject("ExplosionSprite");
+            spriteObj.transform.position = transform.position;
+            spriteObj.transform.localScale = Vector3.one * spriteScale;
+
+            SpriteRenderer sr = spriteObj.AddComponent<SpriteRenderer>();
+            sr.sprite = explosionSprite;
+            sr.sortingOrder = 100;
+
+            Destroy(spriteObj, spriteDuration);
+        }
+
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius, affectedLayers);
 
         foreach (Collider2D col in colliders)
         {
-            Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb = col.attachedRigidbody;
+
             if (rb != null)
             {
-                // Push objects away from explosion center
                 Vector2 direction = rb.position - (Vector2)transform.position;
-                rb.AddForce(direction.normalized * explosionForce, ForceMode2D.Impulse);
+                float distance = direction.magnitude;
 
-                // Optional: If the object is a BaseBlock, apply damage
-                Block block = col.GetComponent<Block>();
-                if (block != null)
-                {
-                    // Apply damage proportional to distance or use explosionForce
-                    block.TakeDamage(explosionForce);
-                }
+                float forcePercent = 1 - (distance / explosionRadius);
+                float finalForce = explosionForce * forcePercent;
+
+                rb.AddForce(direction.normalized * finalForce, ForceMode2D.Impulse);
+                rb.velocity = Vector2.ClampMagnitude(rb.velocity, 18f);
+            }
+
+            Block block = col.GetComponent<Block>();
+            if (block != null)
+            {
+                block.TakeDamage(explosionForce);
             }
         }
-
-        // Optional: add explosion particles or sound here
 
         Destroy(gameObject);
     }
 
-    // Visualize explosion radius in the editor
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
