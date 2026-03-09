@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ThunderstormRain : MonoBehaviour
 {
@@ -11,15 +12,19 @@ public class ThunderstormRain : MonoBehaviour
     public Vector2 fallSpeedRange = new Vector2(5f, 10f);
 
     [Header("Thunder Settings")]
-    public GameObject thunderPrefab;       // visual lightning prefab
+    public GameObject thunderPrefab;
     public AudioClip thunderSfx;
     public float thunderInterval = 5f;
     public float thunderForce = 30f;
     public float thunderRadius = 2f;
-    public float thunderDuration = 0.3f;   // how long the thunder stays visible
+    public float thunderDuration = 0.3f;
 
     [Header("Sound Settings")]
     public AudioClip rainSfx;
+
+    [Header("Thunder Flash Settings")]
+    public Image flashImage;           // UI Image covering full screen (white)
+    public float flashDuration = 0.1f; // how fast it fades in/out
 
     private AudioSource audioSource;
 
@@ -34,6 +39,9 @@ public class ThunderstormRain : MonoBehaviour
             audioSource.clip = rainSfx;
             audioSource.Play();
         }
+
+        if (flashImage != null)
+            flashImage.color = new Color(1f, 1f, 1f, 0f); // make transparent at start
 
         StartCoroutine(RainRoutine());
         StartCoroutine(ThunderRoutine());
@@ -72,12 +80,16 @@ public class ThunderstormRain : MonoBehaviour
             if (thunderPrefab != null)
             {
                 GameObject thunderObj = Instantiate(thunderPrefab, strikePos, Quaternion.identity);
-                Destroy(thunderObj, thunderDuration); // disappear after a short time
+                Destroy(thunderObj, thunderDuration);
             }
 
             // Thunder sound
             if (thunderSfx != null)
                 AudioSource.PlayClipAtPoint(thunderSfx, strikePos);
+
+            // Flash screen white
+            if (flashImage != null)
+                StartCoroutine(FlashScreen());
 
             // Affect blocks in radius
             Block[] blocks = FindObjectsOfType<Block>();
@@ -100,6 +112,26 @@ public class ThunderstormRain : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator FlashScreen()
+    {
+        float halfDuration = flashDuration / 2f;
+        // Fade in
+        for (float t = 0; t < halfDuration; t += Time.deltaTime)
+        {
+            flashImage.color = new Color(1f, 1f, 1f, t / halfDuration);
+            yield return null;
+        }
+        flashImage.color = Color.white;
+
+        // Fade out
+        for (float t = 0; t < halfDuration; t += Time.deltaTime)
+        {
+            flashImage.color = new Color(1f, 1f, 1f, 1f - t / halfDuration);
+            yield return null;
+        }
+        flashImage.color = new Color(1f, 1f, 1f, 0f);
     }
 
     void OnDrawGizmosSelected()

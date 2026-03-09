@@ -81,13 +81,13 @@
     <Compile Include="Assets\Scripts\Chicken.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Earthquake.cs" />
-    <Compile Include="Assets\Scripts\Icestorm.cs" />
     <Compile Include="Assets\Scripts\TNTBlock.cs" />
     <Compile Include="Assets\Scripts\EggBomb.cs" />
     <Compile Include="Assets\Scripts\Pidgeon.cs" />
     <Compile Include="Assets\Scripts\BlueBomb.cs" />
     <Compile Include="Assets\Scripts\MiniDuck.cs" />
     <Compile Include="Assets\Scripts\Boar.cs" />
+    <Compile Include="Assets\Scripts\Halestorm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

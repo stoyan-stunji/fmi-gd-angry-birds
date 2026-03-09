@@ -11,12 +11,15 @@ public class Earthquake : MonoBehaviour
     [Header("Camera Shake Settings")]
     public Camera mainCamera;
     public float shakeMagnitude = 0.3f;
+    public float zoomOutSize = 10f;       // target orthographic size during quake
+    public float zoomSpeed = 3f;          // how fast camera zooms in/out
 
     [Header("Sound Settings")]
     public AudioClip quakeSfx;
     private AudioSource audioSource;
 
     private Vector3 originalCamPos;
+    private float originalCamSize;
 
     void Start()
     {
@@ -24,7 +27,10 @@ public class Earthquake : MonoBehaviour
             mainCamera = Camera.main;
 
         if (mainCamera != null)
+        {
             originalCamPos = mainCamera.transform.position;
+            originalCamSize = mainCamera.orthographicSize;
+        }
 
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.loop = false;
@@ -42,6 +48,19 @@ public class Earthquake : MonoBehaviour
             // Play quake sound
             if (quakeSfx != null)
                 audioSource.PlayOneShot(quakeSfx);
+
+            // Zoom out smoothly at start
+            if (mainCamera != null)
+            {
+                float t = 0f;
+                float startSize = mainCamera.orthographicSize;
+                while (t < 1f)
+                {
+                    t += Time.deltaTime * zoomSpeed;
+                    mainCamera.orthographicSize = Mathf.Lerp(startSize, zoomOutSize, t);
+                    yield return null;
+                }
+            }
 
             Rigidbody2D[] objects = FindObjectsOfType<Rigidbody2D>();
             float startTime = Time.time;
@@ -75,9 +94,21 @@ public class Earthquake : MonoBehaviour
                 yield return null;
             }
 
-            // Reset camera
+            // Reset camera position
             if (mainCamera != null)
+            {
                 mainCamera.transform.position = originalCamPos;
+
+                // Smoothly zoom back to original size
+                float t = 0f;
+                float startSize = mainCamera.orthographicSize;
+                while (t < 1f)
+                {
+                    t += Time.deltaTime * zoomSpeed;
+                    mainCamera.orthographicSize = Mathf.Lerp(startSize, originalCamSize, t);
+                    yield return null;
+                }
+            }
         }
     }
 }
