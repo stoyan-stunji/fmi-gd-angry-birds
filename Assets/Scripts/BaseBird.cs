@@ -80,6 +80,7 @@ public abstract class BaseBird : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         manager.LoadNextBird();
+
         Destroy(gameObject);
     }
 

@@ -22,7 +22,7 @@ public class BirdManager : MonoBehaviour
         UpdateBirdUI();
     }
 
-    void SpawnBirdQueue() {
+    public void SpawnBirdQueue() {
         for (int i = 0; i < birdPrefabs.Count; i++) {
             Vector3 pos = queuePositions[Mathf.Min(i, queuePositions.Length - 1)].position;
             BaseBird bird = Instantiate(
