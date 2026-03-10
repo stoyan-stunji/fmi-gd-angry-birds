@@ -411,9 +411,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ab86a1de959f55344ba95c09deadec75, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 22b11462c1e5923439725bfd8f2a0ebd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1488,8 +1488,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0012112, y: 45}
-  m_SizeDelta: {x: 352.5528, y: 319.0532}
+  m_AnchoredPosition: {x: -0.0012112, y: -21.9426}
+  m_SizeDelta: {x: 352.5528, y: 452.9383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1841810942
 MonoBehaviour:
@@ -1511,10 +1511,44 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game created for the course \"Game Development and Design\" Sofia University,
-    FMI\n\nSound effects:\n- Stoyan Ivanov\n- Ivailo Palushev\n- Dimitar Gagashev\n-
-    Petar Balulov\n- FreeSOUNDS.ORG\n\nMusic:\n- Morphine\n \"A head with wings\"\n\nSprites:\n-
-    SORA + Photoshop\n\nFor educational purposes"
+  m_text: 'Game created for the course "Game Development and Design" Sofia University,
+    FMI
+
+
+    Sound effects:
+
+    - Stoyan Ivanov
+
+    - Ivailo Palushev
+
+    - Dimitar
+    Gagashev
+
+    - Petar Balulov
+
+    - FreeSOUNDS.ORG
+
+
+    Music:
+
+    - Martin
+    Milchov
+
+
+    Game Tester:
+
+    - Dimitar gagashev
+
+    - Petar Balulov
+
+
+    Sprites:
+
+    -
+    SORA + Photoshop
+
+
+    For educational purposes'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1541,8 +1575,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16.5
+  m_fontSizeBase: 16.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1577,7 +1611,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 15.784607, w: 34.439095}
+  m_margin: {x: 0, y: 0, z: 15.784607, w: 33.82766}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

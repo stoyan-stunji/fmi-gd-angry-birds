@@ -8470,7 +8470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSprite: {fileID: 21300000, guid: 1f0665af37bf9d54cbc493927e4414f5, type: 3}
   damagedSprite: {fileID: 21300000, guid: 01bc0908a942cc54f8f76e32077d62b4, type: 3}
-  maxHealth: 55
+  maxHealth: 150
   currentHealth: 0
   minImpactToDamage: 3
   damageMultiplier: 1
@@ -9271,7 +9271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSprite: {fileID: 21300000, guid: 5f1da5249a34f6844b280c72dd990484, type: 3}
   damagedSprite: {fileID: 21300000, guid: 117109622c68ce84d967597f8e9ceab0, type: 3}
-  maxHealth: 100
+  maxHealth: 250
   currentHealth: 0
   minImpactToDamage: 3
   damageMultiplier: 1
@@ -9484,9 +9484,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ab86a1de959f55344ba95c09deadec75, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 22b11462c1e5923439725bfd8f2a0ebd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

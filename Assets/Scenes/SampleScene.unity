@@ -422,6 +422,8 @@ MonoBehaviour:
   health: 3
   idleSprite: {fileID: 21300000, guid: f88a2dfaf09f3144798292a66d0a723e, type: 3}
   hurtSprite: {fileID: 21300000, guid: 0aaef60da02820b40a4007e3a51ee51d, type: 3}
+  collisionSfx: {fileID: 0}
+  deathSfx: {fileID: 0}
 --- !u!114 &145585984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,6 +772,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b1ac5f74adaef4f89ccb3a0602d3b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
   idleSprite: {fileID: 21300000, guid: e54273f146e27e249b4386876c2be114, type: 3}
   launchedSprite: {fileID: 21300000, guid: eaadf99de0fc7174a91afe06ff6d1d04, type: 3}
 --- !u!58 &300097676
@@ -1056,6 +1061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b88f8a68eb519649ab7565ebe4eb5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
   miniDuckPrefab: {fileID: 777046962}
   idleSprite: {fileID: 21300000, guid: 4a05f8a5cb91aee49a6a99e060bcf2d1, type: 3}
   launchedSprite: {fileID: 21300000, guid: d82a772403a475e4cb6fd40f018b467a, type: 3}
@@ -1777,6 +1785,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   armDelay: 0.2
+  explosionSprite: {fileID: 0}
+  spriteDuration: 0.2
+  spriteScale: 0.25
+  explosionSfx: {fileID: 0}
 --- !u!1 &675425941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1979,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d04c12c7f4e21242ae7d8f84c530740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
   speedMultiplier: 2
   idleSprite: {fileID: 21300000, guid: c724ed1451386c44d8f52e70771d72d7, type: 3}
   launchedSprite: {fileID: 21300000, guid: 51735193327fe9d4aad7d996aeeecfe8, type: 3}
@@ -2519,6 +2534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c0c420aa874ff44a198cd13f83dc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
 --- !u!58 &777046964
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2752,11 +2770,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e720a7fee5138ec419eb6fc5dc94633f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 294825326}
-  loseUI: {fileID: 526797471}
+  endLevelUI: {fileID: 0}
+  winMessage: {fileID: 0}
+  loseMessage: {fileID: 0}
   nextLevelName: 
-  delayBeforeNextLevel: 2
-  delayBeforeRestart: 2
 --- !u!4 &798814564
 Transform:
   m_ObjectHideFlags: 0
@@ -2808,6 +2825,8 @@ MonoBehaviour:
   health: 8
   idleSprite: {fileID: 21300000, guid: 2920131b8825d224b8e4cb694496641c, type: 3}
   hurtSprite: {fileID: 21300000, guid: 740d17160de6f794da208580b3a930f7, type: 3}
+  collisionSfx: {fileID: 0}
+  deathSfx: {fileID: 0}
 --- !u!58 &917979052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2988,6 +3007,8 @@ MonoBehaviour:
   minImpactToDamage: 3
   damageMultiplier: 1
   chickPrefab: {fileID: 300097675}
+  chickInCage: {fileID: 0}
+  chickOutOfCage: {fileID: 0}
 --- !u!61 &1035729582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3359,6 +3380,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd69e218ccb97540bcd3a0f75a6164a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
   blueBombPrefab: {fileID: 663004761}
   blueRockPrefab: {fileID: 1419686716}
   blueStrawPrefab: {fileID: 2070215238}
@@ -3853,6 +3877,8 @@ MonoBehaviour:
   health: 10
   idleSprite: {fileID: 21300000, guid: 1466d8e7b39d9d74d8a16e29e44896e9, type: 3}
   hurtSprite: {fileID: 21300000, guid: 4552bddf58be8f14f90143bdd8e156ea, type: 3}
+  collisionSfx: {fileID: 0}
+  deathSfx: {fileID: 0}
 --- !u!58 &1348590937
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4303,6 +4329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d095dd3faf4a446bb865ad011017c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
   idleSprite: {fileID: 21300000, guid: 3c67b13987c28c14ab1481e6153d5f29, type: 3}
   launchedSprite: {fileID: 21300000, guid: 02d36d46ea4862143b612c2477499b60, type: 3}
   powerSprite: {fileID: 21300000, guid: 7ff967cf89c45c74ead09182f2fcc2ea, type: 3}
@@ -4568,7 +4597,10 @@ MonoBehaviour:
   affectedLayers:
     serializedVersion: 2
     m_Bits: 64
-  explosionEffectPrefab: {fileID: 0}
+  explosionSprite: {fileID: 0}
+  explosionSpriteDuration: 0.15
+  explosionSpriteScale: 0.2
+  explosionSfx: {fileID: 0}
 --- !u!61 &1673230998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5178,6 +5210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702c8232399ba624f88bd04f5e98a50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchSfx: {fileID: 0}
+  powerSfx: {fileID: 0}
+  collisionSfx: {fileID: 0}
   eggBombPrefab: {fileID: 1856602669}
   idleSprite: {fileID: 21300000, guid: 9ce70c714632baf4689716365d53b6c7, type: 3}
   launchedSprite: {fileID: 21300000, guid: f5a7711fbde63c6449aa4fb6c445dfb1, type: 3}
@@ -5350,6 +5385,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   armDelay: 0.2
+  explosionSprite: {fileID: 0}
+  spriteDuration: 0.2
+  spriteScale: 0.25
+  explosionSfx: {fileID: 0}
 --- !u!58 &1856602671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5878,6 +5917,8 @@ MonoBehaviour:
   health: 5
   idleSprite: {fileID: 21300000, guid: 0929f5d811031e844a0b44a98332c4d1, type: 3}
   hurtSprite: {fileID: 21300000, guid: 7205d599f612eca478f7c4483e6138c8, type: 3}
+  collisionSfx: {fileID: 0}
+  deathSfx: {fileID: 0}
 --- !u!58 &2140810915
 CircleCollider2D:
   m_ObjectHideFlags: 0
