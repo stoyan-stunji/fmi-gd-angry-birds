@@ -51,7 +51,7 @@ public abstract class BaseBird : MonoBehaviour
             PlaySound(powerSfx);
         }
 
-        if (waitingForStop && rb.velocity.magnitude < 1f)
+        if (waitingForStop && rb.velocity.magnitude < 2f)
         {
             waitingForStop = false;
             StartCoroutine(ReturnNextBird());
