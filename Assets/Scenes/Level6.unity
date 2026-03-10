@@ -3564,7 +3564,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   armDelay: 0.2
-  explosionSprite: {fileID: 21300000, guid: 72dd501049c54f24ea8b1617c3c3ee30, type: 3}
+  explosionSprite: {fileID: 21300000, guid: 2595fd71043c11e40965395fb4c112be, type: 3}
   spriteDuration: 0.2
   spriteScale: 0.25
   explosionSfx: {fileID: 8300000, guid: 24994e0f92da3cb419b44c0836eb414c, type: 3}

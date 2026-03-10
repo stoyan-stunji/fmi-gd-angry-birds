@@ -3085,6 +3085,7 @@ MonoBehaviour:
   launchSfx: {fileID: 8300000, guid: b4d1d8c84ba32fd4a83d0105da518708, type: 3}
   powerSfx: {fileID: 8300000, guid: 83c6dd01dced792489ddf33600ae688d, type: 3}
   collisionSfx: {fileID: 8300000, guid: 190f63a7ba8be1c42866d256ac489863, type: 3}
+  featherSprite: {fileID: 21300000, guid: 510361e1d349fdd4f9c20c12027977e7, type: 3}
   idleSprite: {fileID: 21300000, guid: e54273f146e27e249b4386876c2be114, type: 3}
   launchedSprite: {fileID: 21300000, guid: eaadf99de0fc7174a91afe06ff6d1d04, type: 3}
 --- !u!50 &878261627

@@ -14,18 +14,23 @@ public class CameraFollow : MonoBehaviour
     private bool introPlaying = true;
     private float introTimer = 0f;
 
-    void Start() {
-        if (levelOverviewPoint != null) {
+    void Start()
+    {
+        if (levelOverviewPoint != null)
+        {
             transform.position = levelOverviewPoint.position;
         }
     }
 
-    void LateUpdate() {
-        if (target == null) {
+    void LateUpdate()
+    {
+        if (target == null)
+        {
             return;
         }
 
-        if (introPlaying) {
+        if (introPlaying)
+        {
             PlayIntro();
             return;
         }
@@ -33,7 +38,8 @@ public class CameraFollow : MonoBehaviour
         FollowTarget();
     }
 
-    void PlayIntro() {
+    void PlayIntro()
+    {
         introTimer += Time.deltaTime;
 
         Vector3 desiredPosition = target.position + offset;
@@ -44,12 +50,14 @@ public class CameraFollow : MonoBehaviour
             introTimer / introDuration
         );
 
-        if (introTimer >= introDuration) {
+        if (introTimer >= introDuration)
+        {
             introPlaying = false;
         }
     }
 
-    void FollowTarget() {
+    void FollowTarget()
+    {
         Vector3 desiredPosition = target.position + offset;
 
         transform.position = Vector3.Lerp(
@@ -59,7 +67,8 @@ public class CameraFollow : MonoBehaviour
         );
     }
 
-    public void SetTarget(Transform newTarget) {
+    public void SetTarget(Transform newTarget)
+    {
         target = newTarget;
     }
 }

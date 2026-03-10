@@ -16,14 +16,17 @@ public class BirdManager : MonoBehaviour
     private List<BaseBird> spawnedBirds = new List<BaseBird>();
     private int currentBird = 0;
 
-    void Start() {
+    void Start()
+    {
         SpawnBirdQueue();
         LoadNextBird();
         UpdateBirdUI();
     }
 
-    public void SpawnBirdQueue() {
-        for (int i = 0; i < birdPrefabs.Count; i++) {
+    public void SpawnBirdQueue()
+    {
+        for (int i = 0; i < birdPrefabs.Count; i++)
+        {
             Vector3 pos = queuePositions[Mathf.Min(i, queuePositions.Length - 1)].position;
             BaseBird bird = Instantiate(
                 birdPrefabs[i],
@@ -35,7 +38,8 @@ public class BirdManager : MonoBehaviour
         }
     }
 
-    public void LoadNextBird() {
+    public void LoadNextBird()
+    {
         if (currentBird >= spawnedBirds.Count)
         {
             Debug.Log("BirdManager::No birds left");
@@ -52,10 +56,13 @@ public class BirdManager : MonoBehaviour
         UpdateBirdUI();
     }
 
-    void UpdateQueuePositions() {
-        for (int i = currentBird; i < spawnedBirds.Count; i++) {
+    void UpdateQueuePositions()
+    {
+        for (int i = currentBird; i < spawnedBirds.Count; i++)
+        {
             int queueIndex = i - currentBird;
-            if (queueIndex >= queuePositions.Length) {
+            if (queueIndex >= queuePositions.Length)
+            {
                 break;
             }
 
@@ -63,7 +70,8 @@ public class BirdManager : MonoBehaviour
         }
     }
 
-    public void AddBirdToQueue(BaseBird newBirdPrefab) {
+    public void AddBirdToQueue(BaseBird newBirdPrefab)
+    {
         Vector3 pos = queuePositions[Mathf.Min(spawnedBirds.Count, queuePositions.Length - 1)].position;
 
         BaseBird bird = Instantiate(
@@ -78,12 +86,16 @@ public class BirdManager : MonoBehaviour
         UpdateBirdUI();
     }
 
-    void UpdateBirdUI() {
-        for (int i = 0; i < birdIcons.Length; i++) {
-            if (i < spawnedBirds.Count && i >= currentBird) {
+    void UpdateBirdUI()
+    {
+        for (int i = 0; i < birdIcons.Length; i++)
+        {
+            if (i < spawnedBirds.Count && i >= currentBird)
+            {
                 birdIcons[i].enabled = true;
             }
-            else {
+            else
+            {
                 birdIcons[i].enabled = false;
             }
         }

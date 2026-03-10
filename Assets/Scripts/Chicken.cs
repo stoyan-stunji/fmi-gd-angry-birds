@@ -10,17 +10,20 @@ public class Chicken : BaseBird
 
     public float flyUpForce = 6f;
 
-    protected override void Awake() {
+    protected override void Awake()
+    {
         base.Awake();
         sr.sprite = idleSprite;
     }
 
-    public override void Launch(Vector2 force) {
+    public override void Launch(Vector2 force)
+    {
         base.Launch(force);
         sr.sprite = launchedSprite;
     }
 
-    protected override void ActivatePower() {
+    protected override void ActivatePower()
+    {
         powered = true;
         sr.sprite = powerSprite;
         DropEgg();
@@ -29,8 +32,10 @@ public class Chicken : BaseBird
         rb.AddForce(Vector2.up * flyUpForce, ForceMode2D.Impulse);
     }
 
-    void DropEgg() {
-        if (eggBombPrefab == null) {
+    void DropEgg()
+    {
+        if (eggBombPrefab == null)
+        {
             Debug.LogError("Chicken::Egg Bomb Prefab not assigned");
             return;
         }
@@ -43,11 +48,13 @@ public class Chicken : BaseBird
 
         Rigidbody2D eggRb = egg.GetComponent<Rigidbody2D>();
 
-        if (eggRb != null) {
+        if (eggRb != null)
+        {
             eggRb.velocity = new Vector2(rb.velocity.x, -2f);
         }
 
-        if (manager != null && manager.cameraFollow != null) {
+        if (manager != null && manager.cameraFollow != null)
+        {
             manager.cameraFollow.SetTarget(egg.transform);
         }
     }
