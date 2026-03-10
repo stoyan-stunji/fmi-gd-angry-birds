@@ -24,9 +24,19 @@ public class Duck : BaseBird
 
     protected override void ActivatePower()
     {
+        SetPowerState();
+        GameObject firstDuck = SpawnMiniDucks();
+        MoveCameraAndDestroy(firstDuck);
+    }
+
+    private void SetPowerState()
+    {
         powered = true;
         sr.sprite = powerSprite;
+    }
 
+    private GameObject SpawnMiniDucks()
+    {
         GameObject firstDuck = null;
 
         for (int i = 0; i < splitCount; i++)
@@ -38,10 +48,11 @@ public class Duck : BaseBird
             );
 
             if (i == 0)
+            {
                 firstDuck = mini;
+            }
 
             Rigidbody2D miniRb = mini.GetComponent<Rigidbody2D>();
-
             miniRb.isKinematic = false;
 
             Vector2 spread = new Vector2(
@@ -55,7 +66,11 @@ public class Duck : BaseBird
             miniBird.SetManager(manager);
         }
 
-        // move camera to one of the mini ducks
+        return firstDuck;
+    }
+
+    private void MoveCameraAndDestroy(GameObject firstDuck)
+    {
         if (firstDuck != null)
         {
             manager.cameraFollow.SetTarget(firstDuck.transform);

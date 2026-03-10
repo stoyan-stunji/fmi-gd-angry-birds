@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pidgeon : BaseBird
+public class Pigeon : BaseBird
 {
     public Sprite idleSprite;
     public Sprite launchedSprite;

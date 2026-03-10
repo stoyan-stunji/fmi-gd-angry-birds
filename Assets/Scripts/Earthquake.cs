@@ -21,10 +21,14 @@ public class Earthquake : MonoBehaviour
     void Start()
     {
         if (mainCamera == null)
+        {
             mainCamera = Camera.main;
+        }
 
         if (mainCamera != null)
+        {
             originalCamPos = mainCamera.transform.position;
+        }
 
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.loop = false;
@@ -38,46 +42,69 @@ public class Earthquake : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(interval);
-
-            // Play quake sound
-            if (quakeSfx != null)
-                audioSource.PlayOneShot(quakeSfx);
+            PlayQuakeSound();
 
             Rigidbody2D[] objects = FindObjectsOfType<Rigidbody2D>();
-            float startTime = Time.time;
+            yield return ApplyQuake(objects);
+        }
+    }
 
-            while (Time.time - startTime < duration)
+    private void PlayQuakeSound()
+    {
+        if (quakeSfx != null)
+        {
+            audioSource.PlayOneShot(quakeSfx);
+        }
+    }
+
+    private IEnumerator ApplyQuake(Rigidbody2D[] objects)
+    {
+        float startTime = Time.time;
+        while (Time.time - startTime < duration)
+        {
+            ApplyForceToRigidbodies(objects);
+            ShakeCamera();
+            yield return null;
+        }
+
+        ResetCameraPosition();
+    }
+
+    private void ApplyForceToRigidbodies(Rigidbody2D[] objects)
+    {
+        foreach (Rigidbody2D rb in objects)
+        {
+            if (rb != null && !rb.isKinematic)
             {
-                // Apply random force to all rigidbodies
-                foreach (Rigidbody2D rb in objects)
-                {
-                    if (rb != null && !rb.isKinematic)
-                    {
-                        Vector2 randomForce = new Vector2(
-                            Random.Range(-quakeForce, quakeForce),
-                            Random.Range(-quakeForce, quakeForce)
-                        );
-                        rb.AddForce(randomForce, ForceMode2D.Force);
-                    }
-                }
-
-                // Camera shake
-                if (mainCamera != null)
-                {
-                    Vector3 shakeOffset = new Vector3(
-                        Random.Range(-shakeMagnitude, shakeMagnitude),
-                        Random.Range(-shakeMagnitude, shakeMagnitude),
-                        0
-                    );
-                    mainCamera.transform.position = originalCamPos + shakeOffset;
-                }
-
-                yield return null;
+                Vector2 randomForce = new Vector2(
+                    Random.Range(-quakeForce, quakeForce),
+                    Random.Range(-quakeForce, quakeForce)
+                );
+                rb.AddForce(randomForce, ForceMode2D.Force);
             }
+        }
+    }
 
-            // Reset camera position
-            if (mainCamera != null)
-                mainCamera.transform.position = originalCamPos;
+    private void ShakeCamera()
+    {
+        if (mainCamera == null)
+        {
+            return;
+        }
+
+        Vector3 shakeOffset = new Vector3(
+            Random.Range(-shakeMagnitude, shakeMagnitude),
+            Random.Range(-shakeMagnitude, shakeMagnitude),
+            0
+        );
+        mainCamera.transform.position = originalCamPos + shakeOffset;
+    }
+
+    private void ResetCameraPosition()
+    {
+        if (mainCamera != null)
+        {
+            mainCamera.transform.position = originalCamPos;
         }
     }
 }

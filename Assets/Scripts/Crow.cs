@@ -74,7 +74,7 @@ public class Crow : BaseBird
         Rigidbody2D objRb = obj.GetComponent<Rigidbody2D>();
         if (objRb != null)
         {
-            objRb.velocity = rb.velocity; // inherit Crow velocity
+            objRb.velocity = rb.velocity; 
             objRb.AddForce(transform.up * shootForce, ForceMode2D.Impulse);
         }
     }

@@ -31,7 +31,10 @@ public class BlueBomb : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!armed || exploded) return;
+        if (!armed || exploded)
+        {
+            return;
+        }
         Explode();
     }
 
@@ -39,10 +42,23 @@ public class BlueBomb : MonoBehaviour
     {
         exploded = true;
 
-        if (explosionSfx != null)
-            AudioSource.PlayClipAtPoint(explosionSfx, transform.position);
+        PlayExplosionSound();
+        ShowExplosionSprite();
+        ApplyExplosionForce();
 
-        // Explosion sprite
+        Destroy(gameObject);
+    }
+
+    private void PlayExplosionSound()
+    {
+        if (explosionSfx != null)
+        {
+            AudioSource.PlayClipAtPoint(explosionSfx, transform.position);
+        }
+    }
+
+    private void ShowExplosionSprite()
+    {
         if (explosionSprite != null)
         {
             GameObject spriteObj = new GameObject("ExplosionSprite");
@@ -55,7 +71,10 @@ public class BlueBomb : MonoBehaviour
 
             Destroy(spriteObj, spriteDuration);
         }
+    }
 
+    private void ApplyExplosionForce()
+    {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius, affectedLayers);
 
         foreach (Collider2D col in colliders)
@@ -74,8 +93,6 @@ public class BlueBomb : MonoBehaviour
                 rb.velocity = Vector2.ClampMagnitude(rb.velocity, 18f);
             }
         }
-
-        Destroy(gameObject);
     }
 
     void OnDrawGizmosSelected()
