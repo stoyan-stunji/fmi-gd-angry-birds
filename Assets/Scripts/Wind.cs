@@ -3,7 +3,7 @@ using UnityEngine;
 public class ConstantWind : MonoBehaviour
 {
     [Header("Wind Settings")]
-    public Vector2 windForce = new Vector2(5f, 0f); // strong horizontal wind
+    public Vector2 windForce = new Vector2(5f, 0f);
     public bool affectBlocks = true;
     public bool affectBirds = true;
 
@@ -13,7 +13,6 @@ public class ConstantWind : MonoBehaviour
 
     void Awake()
     {
-        // Setup audio source
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.loop = true;
         audioSource.playOnAwake = false;
@@ -27,7 +26,12 @@ public class ConstantWind : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Apply wind to birds
+        AffectBirds();
+        AffectBlocks();
+    }
+
+    void AffectBirds()
+    {
         if (affectBirds)
         {
             BaseBird[] birds = FindObjectsOfType<BaseBird>();
@@ -40,15 +44,19 @@ public class ConstantWind : MonoBehaviour
                 }
             }
         }
+    }
 
-        // Apply wind to blocks
+    void AffectBlocks()
+    {
         if (affectBlocks)
         {
             Rigidbody2D[] blocks = FindObjectsOfType<Rigidbody2D>();
             foreach (Rigidbody2D rb in blocks)
             {
                 if (rb != null && !rb.isKinematic)
+                {
                     rb.AddForce(windForce, ForceMode2D.Force);
+                }
             }
         }
     }
