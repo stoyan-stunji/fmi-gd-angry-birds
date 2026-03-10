@@ -733,17 +733,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385257769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 641963786}
-  m_Father: {fileID: 1402965843}
+  m_Father: {fileID: 1830902603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -202, y: -143.24402}
+  m_AnchoredPosition: {x: -475, y: 165}
   m_SizeDelta: {x: 221.1482, y: 87.0716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385257771
@@ -1490,7 +1490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 195, y: -143.24402}
+  m_AnchoredPosition: {x: -13, y: -135}
   m_SizeDelta: {x: 221.1482, y: 87.0716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766345132
@@ -3845,8 +3845,6 @@ RectTransform:
   m_Children:
   - {fileID: 1456644973}
   - {fileID: 1363550460}
-  - {fileID: 385257770}
-  - {fileID: 1699324218}
   - {fileID: 766345131}
   m_Father: {fileID: 1830902603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4824,17 +4822,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699324217}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 90704006}
-  m_Father: {fileID: 1402965843}
+  m_Father: {fileID: 1830902603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -143.24402}
+  m_AnchoredPosition: {x: -335, y: 165}
   m_SizeDelta: {x: 221.1482, y: 87.0716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1699324219
@@ -5556,6 +5554,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1699324218}
+  - {fileID: 385257770}
   - {fileID: 1402965843}
   - {fileID: 904888436}
   m_Father: {fileID: 0}
