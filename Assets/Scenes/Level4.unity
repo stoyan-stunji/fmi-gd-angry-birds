@@ -2924,7 +2924,6 @@ GameObject:
   - component: {fileID: 564592369}
   - component: {fileID: 564592368}
   - component: {fileID: 564592367}
-  - component: {fileID: 564592366}
   - component: {fileID: 564592372}
   m_Layer: 6
   m_Name: ForemanBoar
@@ -2933,18 +2932,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &564592366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564592365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &564592367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5918,7 +5905,6 @@ GameObject:
   - component: {fileID: 1630884576}
   - component: {fileID: 1630884575}
   - component: {fileID: 1630884574}
-  - component: {fileID: 1630884573}
   - component: {fileID: 1630884579}
   m_Layer: 6
   m_Name: CommandoBoar
@@ -5927,18 +5913,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1630884573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630884572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1630884574
 MonoBehaviour:
   m_ObjectHideFlags: 0

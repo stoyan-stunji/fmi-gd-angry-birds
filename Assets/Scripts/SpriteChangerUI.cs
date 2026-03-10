@@ -26,9 +26,11 @@ public class SpriteChangerUI : MonoBehaviour
 
     public void ChangeSprite()
     {
-        if (sprites.Length == 0) return;
+        if (sprites.Length == 0)
+        {
+            return;
+        }
 
-        // Play sound
         if (clickSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(clickSound);

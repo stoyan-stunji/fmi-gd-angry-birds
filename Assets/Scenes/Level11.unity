@@ -1819,7 +1819,6 @@ GameObject:
   - component: {fileID: 448635823}
   - component: {fileID: 448635822}
   - component: {fileID: 448635821}
-  - component: {fileID: 448635820}
   - component: {fileID: 448635819}
   m_Layer: 6
   m_Name: Boar
@@ -1939,18 +1938,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &448635820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448635817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &448635821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6479,7 +6466,6 @@ GameObject:
   - component: {fileID: 1812558279}
   - component: {fileID: 1812558278}
   - component: {fileID: 1812558277}
-  - component: {fileID: 1812558276}
   - component: {fileID: 1812558275}
   m_Layer: 6
   m_Name: ForemanBoar
@@ -6584,18 +6570,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1812558276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812558274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1812558277
 MonoBehaviour:
   m_ObjectHideFlags: 0

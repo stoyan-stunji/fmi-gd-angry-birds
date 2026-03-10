@@ -11,33 +11,52 @@ public class Slingshot : MonoBehaviour
 
     void Update()
     {
-        if (currentBird == null) return;
+        if (currentBird == null)
+        {
+            return;
+        }
 
+        HandleInput();
+    }
+
+    private void HandleInput()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            dragging = true;
+            StartDragging();
         }
 
         if (dragging)
         {
-            Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 direction = mouse - (Vector2)launchPoint.position;
-
-            direction = Vector2.ClampMagnitude(direction, maxDistance);
-
-            currentBird.transform.position = launchPoint.position + (Vector3)direction;
+            DragBird();
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            dragging = false;
-
-            Vector2 launchDir = launchPoint.position - currentBird.transform.position;
-
-            currentBird.Launch(launchDir * launchPower);
-
-            currentBird = null;
+            ReleaseBird();
         }
+    }
+
+    private void StartDragging()
+    {
+        dragging = true;
+    }
+
+    private void DragBird()
+    {
+        Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = mouse - (Vector2)launchPoint.position;
+        direction = Vector2.ClampMagnitude(direction, maxDistance);
+        currentBird.transform.position = launchPoint.position + (Vector3)direction;
+    }
+
+    private void ReleaseBird()
+    {
+        dragging = false;
+
+        Vector2 launchDir = launchPoint.position - currentBird.transform.position;
+        currentBird.Launch(launchDir * launchPower);
+        currentBird = null;
     }
 
     public void SetBird(BaseBird bird)

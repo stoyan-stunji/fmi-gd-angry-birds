@@ -6,7 +6,6 @@ public class MiniDuck : BaseBird
     {
         base.Awake();
 
-        // mini ducks are already flying
         launched = true;
         rb.isKinematic = false;
     }
@@ -14,7 +13,6 @@ public class MiniDuck : BaseBird
     protected override void ActivatePower()
     {
         powered = true;
-        // mini ducks have no power
     }
 
     protected override void OnCollisionEnter2D(Collision2D collision)

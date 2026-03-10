@@ -5578,7 +5578,6 @@ GameObject:
   - component: {fileID: 1929289077}
   - component: {fileID: 1929289076}
   - component: {fileID: 1929289075}
-  - component: {fileID: 1929289074}
   - component: {fileID: 1929289079}
   m_Layer: 6
   m_Name: Boar
@@ -5602,18 +5601,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 857462321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1929289074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929289072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1929289075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6622,7 +6609,6 @@ GameObject:
   - component: {fileID: 2098550674}
   - component: {fileID: 2098550673}
   - component: {fileID: 2098550672}
-  - component: {fileID: 2098550671}
   - component: {fileID: 2098550676}
   m_Layer: 6
   m_Name: CommandoBoar (FireFighter)
@@ -6646,18 +6632,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 857462321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2098550671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098550669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2098550672
 MonoBehaviour:
   m_ObjectHideFlags: 0

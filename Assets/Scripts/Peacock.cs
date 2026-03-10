@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Peacock : BaseBird
 {
-    public float speedMultiplier = 2f; // How much faster when powered
+    public float speedMultiplier = 2f;
     public Sprite idleSprite;
     public Sprite launchedSprite;
     public Sprite powerSprite;
@@ -24,9 +24,10 @@ public class Peacock : BaseBird
         powered = true;
 
         if (powerSprite != null)
+        {
             sr.sprite = powerSprite;
+        }
 
-        // Apply a forward acceleration in the direction of current velocity
         if (rb.velocity.magnitude > 0.1f)
         {
             Vector2 extraVelocity = rb.velocity.normalized * rb.velocity.magnitude * (speedMultiplier - 1f);

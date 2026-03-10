@@ -917,7 +917,6 @@ GameObject:
   - component: {fileID: 167352860}
   - component: {fileID: 167352859}
   - component: {fileID: 167352858}
-  - component: {fileID: 167352857}
   - component: {fileID: 167352856}
   m_Layer: 6
   m_Name: Boar (2)
@@ -1037,18 +1036,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &167352857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167352854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &167352858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,7 +1660,6 @@ GameObject:
   - component: {fileID: 351847211}
   - component: {fileID: 351847210}
   - component: {fileID: 351847209}
-  - component: {fileID: 351847208}
   - component: {fileID: 351847207}
   m_Layer: 6
   m_Name: Boar (1)
@@ -1793,18 +1779,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &351847208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 351847205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &351847209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3776,7 +3750,6 @@ GameObject:
   - component: {fileID: 1108416197}
   - component: {fileID: 1108416196}
   - component: {fileID: 1108416195}
-  - component: {fileID: 1108416194}
   - component: {fileID: 1108416193}
   m_Layer: 6
   m_Name: CommandoBoar (FireFighter)
@@ -3896,18 +3869,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1108416194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108416191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1108416195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4052,7 +4013,6 @@ GameObject:
   - component: {fileID: 1113238060}
   - component: {fileID: 1113238059}
   - component: {fileID: 1113238058}
-  - component: {fileID: 1113238057}
   - component: {fileID: 1113238056}
   m_Layer: 6
   m_Name: Boar
@@ -4172,18 +4132,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1113238057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113238054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1113238058
 MonoBehaviour:
   m_ObjectHideFlags: 0

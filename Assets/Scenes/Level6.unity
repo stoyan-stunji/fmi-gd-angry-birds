@@ -1066,7 +1066,6 @@ GameObject:
   - component: {fileID: 260265520}
   - component: {fileID: 260265519}
   - component: {fileID: 260265518}
-  - component: {fileID: 260265517}
   - component: {fileID: 260265523}
   m_Layer: 6
   m_Name: ForemanBoar (Wizard)
@@ -1075,18 +1074,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &260265517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260265516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0a87b988f20f479eae5fd442a557b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &260265518
 MonoBehaviour:
   m_ObjectHideFlags: 0
