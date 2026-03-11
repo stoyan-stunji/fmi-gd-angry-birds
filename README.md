@@ -1,6 +1,6 @@
 # ANGRY BIRDS ELEMENTAL CHAOS
 
-![MAIN_MENU](Assests/Screenshots/main_menu_screenshot.PNG)
+![MAIN_MENU](Assets/Screenshots/main_menu_screenshot.PNG)
 
 - **Angry Birds Elemental Chaos** was developed as part of the course **"Game Development and Design"** at Sofia University, FMI. The project is a physics-based puzzle game inspired by the mechanics of `Angry Birds`. The player launches birds from a cannon in order to eliminate enemy boars and destroy structures built from various materials. The game relies on a physics simulation in which objects interact through forces, gravity, and collisions. Players must carefully aim their shots and utilize the unique abilities of different birds to eliminate all boars in each level. The game currently contains:
   - `16` main playable levels;
@@ -96,6 +96,8 @@
     - Lightning strikes occur randomly across the map, dealing severe damage to nearby objects;
     - Lightning strikes are accompanied by a bright white flash, which can momentarily blind the player.
 
+![LEVEL](Assets/Screenshots/level_screenshot.PNG)
+
 ### Level Design
 - The level design of **Angry Birds Elemental Chaos** is structured to gradually introduce gameplay mechanics and increase the difficulty as the player progresses.
   - `Tutorial Levels`:
@@ -155,3 +157,5 @@
 - [The Slides From This GitHub Repo](https://github.com/Ivan-Vankov/GameDevCourse/tree/gh-pages);
 - [Game Development with Unity at FMI](https://www.youtube.com/channel/UCsBZtgJpHY6mISHcyCXRnOA);
 - [How to make an Angry Birds replica in Unity (Livestream Tutorial)](https://www.youtube.com/watch?v=QM8M0RainRI&t=54s).
+
+![THUNDER](Assets/Screenshots/level_thunder_screenshot.PNG)
