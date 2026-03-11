@@ -3,51 +3,55 @@
   "WorkspaceRootPath": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\screenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\screenshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\basebird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\basebird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\birdcageblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\birdcageblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birdcageblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\birdmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\birdmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birdmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\bluebomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\bluebomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bluebomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\crow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\crow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\crow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|c:\\users\\aero\\desktop\\angry-birds\\angry birds endless\\assets\\scripts\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\assets\\scripts\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,19 +71,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Screenshot.cs",
+              "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Screenshot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Screenshot.cs",
+              "ToolTip": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Screenshot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Screenshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T14:04:31.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BaseBird.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\BaseBird.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BaseBird.cs",
               "ToolTip": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\BaseBird.cs",
               "RelativeToolTip": "Assets\\Scripts\\BaseBird.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDUAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAzwDUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T18:58:57.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BirdCageBlock.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\BirdCageBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BirdCageBlock.cs",
@@ -87,12 +104,11 @@
               "RelativeToolTip": "Assets\\Scripts\\BirdCageBlock.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:58:51.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:58:51.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BirdManager.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\BirdManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BirdManager.cs",
@@ -100,12 +116,11 @@
               "RelativeToolTip": "Assets\\Scripts\\BirdManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:58:43.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:58:43.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BirdUIManager.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\BirdUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BirdUIManager.cs",
@@ -113,12 +128,11 @@
               "RelativeToolTip": "Assets\\Scripts\\BirdUIManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:58:29.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:58:29.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Block.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Block.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Block.cs",
@@ -126,12 +140,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Block.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:58:25.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:58:25.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BlueBomb.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\BlueBomb.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BlueBomb.cs",
@@ -139,12 +152,11 @@
               "RelativeToolTip": "Assets\\Scripts\\BlueBomb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:55:37.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:55:37.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
@@ -152,12 +164,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:55:26.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:55:26.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Chick.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Chick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chick.cs",
@@ -165,12 +176,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Chick.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:55:22.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:55:22.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Chicken.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Chicken.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chicken.cs",
@@ -178,12 +188,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Chicken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:55:10.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:55:10.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Crow.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Crow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Crow.cs",
@@ -191,12 +200,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Crow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:54:38.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:54:38.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Boar.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Boar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Boar.cs",
@@ -204,12 +212,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Boar.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:50:13.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:50:13.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Duck.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\Duck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Duck.cs",
@@ -217,12 +224,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Duck.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:40:42.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:40:42.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MiniDuck.cs",
               "DocumentMoniker": "C:\\Users\\Aero\\Desktop\\angry-birds\\Angry Birds Endless\\Assets\\Scripts\\MiniDuck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MiniDuck.cs",
@@ -230,8 +236,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MiniDuck.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T16:38:07.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T16:38:07.383Z"
             }
           ]
         }
