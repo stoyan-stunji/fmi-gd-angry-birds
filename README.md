@@ -2,7 +2,12 @@
 
 ![MAIN_MENU](Assets/Screenshots/main_menu_screenshot.PNG)
 
-- **Angry Birds Elemental Chaos** was developed as part of the course **"Game Development and Design"** at Sofia University, FMI. The project is a physics-based puzzle game inspired by the mechanics of `Angry Birds`. The player launches birds from a cannon in order to eliminate enemy boars and destroy structures built from various materials. The game relies on a physics simulation in which objects interact through forces, gravity, and collisions. Players must carefully aim their shots and utilize the unique abilities of different birds to eliminate all boars in each level. The game currently contains:
+### [DOWNLOAD](https://stoyan-stunji.itch.io/angry-birds-elemental-chaos)
+
+- **Angry Birds Elemental Chaos** was developed as part of the course **"Game Development and Design"** at Sofia University, FMI. The project is a physics-based puzzle game inspired by the mechanics of `Angry Birds`; 
+- The player launches birds from a cannon in order to eliminate enemy boars and destroy structures built from various materials;
+- The game relies on a physics simulation in which objects interact through forces, gravity, and collisions;
+- Players must carefully aim their shots and utilize the unique abilities of different birds to eliminate all boars in each level. The game currently contains:
   - `16` main playable levels;
   - `12` tutorial levels;
 - A structured menu system including:
@@ -99,21 +104,21 @@
  
 ### Block Types
 - Enemy structures are built using `3` primary block materials, `2` special blocks and `2` environmental blocks:
-  - `Glass Block`: Very fragile and easy to break;
+  	- `Glass Block`: Very fragile and easy to break;
 
 <img src="Assets/Sprites/wooden_block.png" width="60" height="60">
 
-  - `Wooden Block`: Moderately durable. Stronger than Glass but weaker than Stone;
-  - `Stone Block`: Highly durable and difficult to destroy;
+  	- `Wooden Block`: Moderately durable. Stronger than Glass but weaker than Stone;
+  	- `Stone Block`: Highly durable and difficult to destroy;
 
 <img src="Assets/Sprites/tnt_block.png" width="60" height="60">
 
-  - `TNT Block`: Explodes upon impact. Damages nearby blocks and boars;
+  	- `TNT Block`: Explodes upon impact. Damages nearby blocks and boars;
 
 <img src="Assets/Sprites/bird_cage_block.png" width="60" height="60">
 
-  - `Bird Cage Block`: When destroyed, releases one Chickie the Chick, which is added to the end of the player's bird roster for the current level;
-  - `Hail Blocks` and `Raindrop Block`.
+  	- `Bird Cage Block`: When destroyed, releases one Chickie the Chick, which is added to the end of the player's bird roster for the current level;
+  	- `Hail Blocks` and `Raindrop Block`.
 
 ![THUNDER](Assets/Screenshots/level_thunder_screenshot.PNG)
  
