@@ -19,12 +19,17 @@
 ### Bird Types:
 - Bird abilities are implemented as triggerable actions during flight. Once launched, the player can activate a bird’s special ability, which modifies the bird’s behavior or creates additional objects;
 - The game features six playable bird types, each with a unique ability that can be activated during flight:
-<img src="Assets/Sprites/chick_idle.png" width="20" height="20">
+
+<img src="Assets/Sprites/chick_idle.png" width="60" height="60">
+
   - `Chickie the Chick`:
     - The basic bird with no special ability;
     - Travels in a predictable ballistic trajectory;
     - Relies solely on impact force to destroy blocks and boars;
     - Serves as an introduction to the game's basic mechanics.
+
+<img src="Assets/Sprites/duck_idle.png" width="60" height="60">
+
   - `Doug the Duck`:
     - Has the ability to split into five birds mid-flight;
     - The split birds spread slightly apart, allowing them to cover a wider horizontal area;
