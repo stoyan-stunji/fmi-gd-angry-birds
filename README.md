@@ -19,6 +19,7 @@
 ### Bird Types:
 - Bird abilities are implemented as triggerable actions during flight. Once launched, the player can activate a bird’s special ability, which modifies the bird’s behavior or creates additional objects;
 - The game features six playable bird types, each with a unique ability that can be activated during flight:
+<img src="Assets/Sprites/chick_idle.png" width="20" height="20">
   - `Chickie the Chick`:
     - The basic bird with no special ability;
     - Travels in a predictable ballistic trajectory;
