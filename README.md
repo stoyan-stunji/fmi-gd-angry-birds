@@ -16,6 +16,8 @@
 - The player clicks and drags a bird away from the cannon to determine the launch angle and power. Upon release, the bird is launched toward the enemy structures following a physics-based ballistic trajectory;
 - During flight, birds interact with the environment through collisions and physical forces. The objective of each level is to eliminate all boars using a limited number of birds.
 
+![LEVEL](Assets/Screenshots/level_screenshot.PNG)
+
 ### Bird Types:
 - Bird abilities are implemented as triggerable actions during flight. Once launched, the player can activate a bird’s special ability, which modifies the bird’s behavior or creates additional objects;
 - The game features six playable bird types, each with a unique ability that can be activated during flight:
@@ -89,7 +91,7 @@
     - Also features an alternative sprite - the Wizard;
     - Functions as a mini-boss enemy.
 
-<img src="Assets/Sprites/boar_foreman.png" width="100" height="100">
+<img src="Assets/Sprites/boar_king.png" width="100" height="100">
 
   - `King Boar`:
     - The main boss enemy, appearing in Levels `8` and `16`;
@@ -98,11 +100,22 @@
 ### Block Types
 - Enemy structures are built using `3` primary block materials, `2` special blocks and `2` environmental blocks:
   - `Glass Block`: Very fragile and easy to break;
+
+<img src="Assets/Sprites/wooden_block.png" width="60" height="60">
+
   - `Wooden Block`: Moderately durable. Stronger than Glass but weaker than Stone;
   - `Stone Block`: Highly durable and difficult to destroy;
+
+<img src="Assets/Sprites/tnt_block.png" width="60" height="60">
+
   - `TNT Block`: Explodes upon impact. Damages nearby blocks and boars;
+
+<img src="Assets/Sprites/bird_cage_block.png" width="60" height="60">
+
   - `Bird Cage Block`: When destroyed, releases one Chickie the Chick, which is added to the end of the player's bird roster for the current level;
   - `Hail Blocks` and `Raindrop Block`.
+
+![THUNDER](Assets/Screenshots/level_thunder_screenshot.PNG)
  
 ### Environmental Hazards:
 - Environmental hazards are a defining feature of the game and represent elemental or natural disasters. Each hazard can either hinder or assist the player depending on how it is used:
@@ -125,8 +138,6 @@
     - Constant rainfall drops Raindrop Blocks that interfere with bird trajectories and damage structures;
     - Lightning strikes occur randomly across the map, dealing severe damage to nearby objects;
     - Lightning strikes are accompanied by a bright white flash, which can momentarily blind the player.
-
-![LEVEL](Assets/Screenshots/level_screenshot.PNG)
 
 ### Level Design
 - The level design of **Angry Birds Elemental Chaos** is structured to gradually introduce gameplay mechanics and increase the difficulty as the player progresses.
@@ -187,5 +198,3 @@
 - [The Slides From This GitHub Repo](https://github.com/Ivan-Vankov/GameDevCourse/tree/gh-pages);
 - [Game Development with Unity at FMI](https://www.youtube.com/channel/UCsBZtgJpHY6mISHcyCXRnOA);
 - [How to make an Angry Birds replica in Unity (Livestream Tutorial)](https://www.youtube.com/watch?v=QM8M0RainRI&t=54s).
-
-![THUNDER](Assets/Screenshots/level_thunder_screenshot.PNG)
