@@ -104,21 +104,21 @@
  
 ### Block Types
 - Enemy structures are built using `3` primary block materials, `2` special blocks and `2` environmental blocks:
-  	- `Glass Block`: Very fragile and easy to break;
+  - `Glass Block`: Very fragile and easy to break;
 
 <img src="Assets/Sprites/wooden_block.png" width="60" height="60">
 
-  	- `Wooden Block`: Moderately durable. Stronger than Glass but weaker than Stone;
-  	- `Stone Block`: Highly durable and difficult to destroy;
+  - `Wooden Block`: Moderately durable. Stronger than Glass but weaker than Stone;
+  - `Stone Block`: Highly durable and difficult to destroy;
 
 <img src="Assets/Sprites/tnt_block.png" width="60" height="60">
 
-  	- `TNT Block`: Explodes upon impact. Damages nearby blocks and boars;
+  - `TNT Block`: Explodes upon impact. Damages nearby blocks and boars;
 
 <img src="Assets/Sprites/bird_cage_block.png" width="60" height="60">
 
-  	- `Bird Cage Block`: When destroyed, releases one Chickie the Chick, which is added to the end of the player's bird roster for the current level;
-  	- `Hail Blocks` and `Raindrop Block`.
+  - `Bird Cage Block`: When destroyed, releases one Chickie the Chick, which is added to the end of the player's bird roster for the current level;
+  - `Hail Blocks` and `Raindrop Block`.
 
 ![THUNDER](Assets/Screenshots/level_thunder_screenshot.PNG)
  
