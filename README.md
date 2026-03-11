@@ -1,5 +1,7 @@
 # ANGRY BIRDS ELEMENTAL CHAOS
 
+![MAIN_MENU](Assests/Screenshots/main_menu_screenshot.PNG)
+
 - **Angry Birds Elemental Chaos** was developed as part of the course **"Game Development and Design"** at Sofia University, FMI. The project is a physics-based puzzle game inspired by the mechanics of `Angry Birds`. The player launches birds from a cannon in order to eliminate enemy boars and destroy structures built from various materials. The game relies on a physics simulation in which objects interact through forces, gravity, and collisions. Players must carefully aim their shots and utilize the unique abilities of different birds to eliminate all boars in each level. The game currently contains:
   - `16` main playable levels;
   - `12` tutorial levels;
@@ -89,8 +91,13 @@
   - `Meteor Shower`:
     - A visual variant of the Hailstorm mechanic;
     - Functionally identical, but with meteor visuals.
+  - `Thunderstorm`:
+    - Constant rainfall drops Raindrop Blocks that interfere with bird trajectories and damage structures;
     - Lightning strikes occur randomly across the map, dealing severe damage to nearby objects;
     - Lightning strikes are accompanied by a bright white flash, which can momentarily blind the player.
+
+### Level Design
+- The level design of **Angry Birds Elemental Chaos** is structured to gradually introduce gameplay mechanics and increase the difficulty as the player progresses.
   - `Tutorial Levels`:
     - The game begins with `12` tutorial levels designed to introduce the core mechanics step by step. Each tutorial level focuses on a specific gameplay element, allowing the player to learn through practical interaction rather than explicit instruction.
     - The tutorials gradually introduce:
@@ -100,10 +107,16 @@
       - Environmental hazards;
   - `Main Levels`:
     - The game contains `16` primary levels that challenge the player to apply previously learned mechanics;
+    - The design philosophy behind these levels focuses on:
+      - `Increasing structural complexity`: Later levels feature larger and more intricate structures composed of multiple block materials;
+      - `Strategic bird usage`: Certain levels require the player to use specific bird abilities effectively;
       - `Environmental interaction`: Environmental hazards are incorporated to add unpredictability and dynamic gameplay situations;
       - `Resource management`: Players must eliminate all boars using a limited number of birds;
       - Boss encounters occur in Level `8` and Level `16`, where the King Boar appears. These levels feature more durable structures and require careful planning and efficient use of abilities.
   - `Level Management`:
+      - A level is considered complete when all boars are eliminated. If the player runs out of birds before completing the objective, the level is failed and can be restarted;
+      - Whether the player completes the level or not, one can go to the next level. This decision was made as to remove any negative emotions towards the game as a whole.
+  - `Structural Design`:
     - Enemy structures are built using combinations of glass, wooden, stone and the two special blocks;
     - Designing structures with different materials allows the game to emphasize physics-based destruction, where structural weak points can be exploited to collapse entire buildings;
     - Certain levels intentionally include vulnerable structural supports, encouraging players to aim strategically rather than relying solely on brute force.
@@ -142,13 +155,3 @@
 - [The Slides From This GitHub Repo](https://github.com/Ivan-Vankov/GameDevCourse/tree/gh-pages);
 - [Game Development with Unity at FMI](https://www.youtube.com/channel/UCsBZtgJpHY6mISHcyCXRnOA);
 - [How to make an Angry Birds replica in Unity (Livestream Tutorial)](https://www.youtube.com/watch?v=QM8M0RainRI&t=54s).
-      - A level is considered complete when all boars are eliminated. If the player runs out of birds before completing the objective, the level is failed and can be restarted;
-      - Whether the player completes the level or not, one can go to the next level. This decision was made as to remove any negative emotions towards the game as a whole.
-  - `Structural Design`:
-    - The design philosophy behind these levels focuses on:
-      - `Increasing structural complexity`: Later levels feature larger and more intricate structures composed of multiple block materials;
-      - `Strategic bird usage`: Certain levels require the player to use specific bird abilities effectively;
-
-### Level Design
-- The level design of **Angry Birds Elemental Chaos** is structured to gradually introduce gameplay mechanics and increase the difficulty as the player progresses.
-
