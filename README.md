@@ -34,15 +34,24 @@
     - Has the ability to split into five birds mid-flight;
     - The split birds spread slightly apart, allowing them to cover a wider horizontal area;
     - Effective for damaging multiple targets or large structures.
+
+<img src="Assets/Sprites/peacock_idle.png" width="60" height="60">
+
   - `Punky the Peacock`:
     - Can activate a forward speed boost during flight;
     - The acceleration increases kinetic energy and impact damage;
     - Particularly effective for long horizontal distances and in levels with wind, as the speed helps counteract wind resistance.
+
+<img src="Assets/Sprites/chicken_idle.png" width="60" height="60">
+
   - `Chicka the Chicken`:
     - Can drop an egg-bomb projectile while in flight;
     - The egg explodes upon impact with the ground or objects;
     - After dropping the egg, the bird is slightly propelled upward;
     - Useful for attacking structures from above or targeting confined spaces.
+
+<img src="Assets/Sprites/crow_idle.png" width="60" height="60">
+
   - `Crowley the Crow`:
     - Has the ability to spit Blue projectiles with randomized effects:
       - 50% chance – Blue Straw;
@@ -50,6 +59,9 @@
       - 5% chance – Blue Bomb;
     - The straw and rock deal direct damage to boars and blocks;
     - The bomb explodes on impact but has a smaller blast radius than Chicka’s egg-bomb.
+
+<img src="Assets/Sprites/pidgeon_idle.png" width="60" height="60">
+
   - `Peyo the Pigeon`:
     - Can expand in size during flight, increasing its collision bounds;
     - This ability makes it effective in tight spaces and when pushing structures;
@@ -57,16 +69,28 @@
 
 ### Enemy Types:
 - The game features four types of enemy boars, each with increasing durability:
+
+<img src="Assets/Sprites/boar_simple.png" width="60" height="60">
+
   - `Normal Boar`:
     - The standard enemy type;
-    - Appears in early levels and has the lowest health;
+    - Appears in early levels and has the lowest health.
+
+<img src="Assets/Sprites/boar_commando.png" width="60" height="60">
+
   - `Commando Boar`:
     - Possesses a larger health pool than the Normal Boar;
     - Uses an alternative sprite resembling a firefighter.
+
+<img src="Assets/Sprites/boar_foreman.png" width="80" height="80">
+
   - `Foreman Boar`:
     - Has an even larger health pool;
     - Also features an alternative sprite - the Wizard;
     - Functions as a mini-boss enemy.
+
+<img src="Assets/Sprites/boar_foreman.png" width="100" height="100">
+
   - `King Boar`:
     - The main boss enemy, appearing in Levels `8` and `16`;
     - Possesses a very large health pool and is difficult to defeat.
