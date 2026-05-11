@@ -199,6 +199,18 @@
   - Clicking on a boar switches it to its alternative costume and triggers its voice line;
 - This adds a small interactive element to the menu while showcasing the characters.
 
+### Update 1:
+- New Shader Effects:
+  - Added new Falling Snow Shader for levels with Hailstorm;
+  - Added new Falling Fire Sparks Shader for levels with Firestorm;
+  - Added a new bird: 
+
+<img src="Assets/Sprites/the_original.png" width="60" height="60">
+
+  - `The Original`:
+    - Based on the first bird in the original Angry Birds games; 
+    - However he has an ability in this game - frezees mid-air and drops down with a powerful impact.
+
 ### Literature:
 - [The Slides From This GitHub Repo](https://github.com/Ivan-Vankov/GameDevCourse/tree/gh-pages);
 - [Game Development with Unity at FMI](https://www.youtube.com/channel/UCsBZtgJpHY6mISHcyCXRnOA);
