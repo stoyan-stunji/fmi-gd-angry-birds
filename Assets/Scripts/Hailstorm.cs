@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Hailstorm : MonoBehaviour
 {
@@ -19,8 +20,15 @@ public class Hailstorm : MonoBehaviour
     public float zoomOutSize = 10f;
     public float zoomSpeed = 3f;
 
+    [Header("Snow Shader Overlay")]
+    public Image snowOverlayImage;
+    public float snowFadeSpeed = 2f;
+    public float snowIntensity = 1f;
+
     private AudioSource audioSource;
     private float originalCamSize;
+
+    private Material snowMaterial;
 
     void Start()
     {
@@ -38,6 +46,16 @@ public class Hailstorm : MonoBehaviour
             originalCamSize = mainCamera.orthographicSize;
         }
 
+        if (snowOverlayImage != null)
+        {
+            snowMaterial = snowOverlayImage.material;
+
+            if (snowMaterial != null)
+            {
+                snowMaterial.SetFloat("_SnowIntensity", 0f);
+            }
+        }
+
         StartCoroutine(SpawnDebris());
     }
 
@@ -46,10 +64,19 @@ public class Hailstorm : MonoBehaviour
         while (true)
         {
             float interval = Random.Range(minInterval, maxInterval);
+
             yield return ZoomCamera(mainCamera.orthographicSize, zoomOutSize);
+
+            yield return FadeSnow(0f, snowIntensity);
+
             SpawnMultipleDebris();
+
             PlayDebrisSound();
+
             yield return new WaitForSeconds(interval);
+
+            yield return FadeSnow(snowIntensity, 0f);
+
             yield return ZoomCamera(mainCamera.orthographicSize, originalCamSize);
         }
     }
@@ -84,12 +111,43 @@ public class Hailstorm : MonoBehaviour
         }
 
         float t = 0f;
+
         while (t < 1f)
         {
             t += Time.deltaTime * zoomSpeed;
-            mainCamera.orthographicSize = Mathf.Lerp(startSize, targetSize, t);
+
+            mainCamera.orthographicSize = Mathf.Lerp(
+                startSize,
+                targetSize,
+                t
+            );
+
             yield return null;
         }
+
         mainCamera.orthographicSize = targetSize;
+    }
+
+    private IEnumerator FadeSnow(float start, float end)
+    {
+        if (snowMaterial == null)
+        {
+            yield break;
+        }
+
+        float t = 0f;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime * snowFadeSpeed;
+
+            float value = Mathf.Lerp(start, end, t);
+
+            snowMaterial.SetFloat("_SnowIntensity", value);
+
+            yield return null;
+        }
+
+        snowMaterial.SetFloat("_SnowIntensity", end);
     }
 }

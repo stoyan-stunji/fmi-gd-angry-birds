@@ -24,9 +24,10 @@ public class ThunderstormRain : MonoBehaviour
 
     [Header("Thunder Flash Settings")]
     public Image flashImage;
-    public float flashDuration = 0.1f;
+    public float flashDuration = 0.15f;
 
     private AudioSource audioSource;
+    private Material flashMaterial;
 
     void Start()
     {
@@ -42,7 +43,12 @@ public class ThunderstormRain : MonoBehaviour
 
         if (flashImage != null)
         {
-            flashImage.color = new Color(1f, 1f, 1f, 0f);
+            flashMaterial = flashImage.material;
+
+            if (flashMaterial != null)
+            {
+                flashMaterial.SetFloat("_FlashStrength", 0f);
+            }
         }
 
         StartCoroutine(RainRoutine());
@@ -69,9 +75,13 @@ public class ThunderstormRain : MonoBehaviour
         GameObject drop = Instantiate(rainDropPrefab, spawnPos, Quaternion.identity);
 
         Rigidbody2D rb = drop.GetComponent<Rigidbody2D>();
+
         if (rb != null)
         {
-            rb.velocity = new Vector2(0f, -Random.Range(fallSpeedRange.x, fallSpeedRange.y));
+            rb.velocity = new Vector2(
+                0f,
+                -Random.Range(fallSpeedRange.x, fallSpeedRange.y)
+            );
         }
     }
 
@@ -79,12 +89,18 @@ public class ThunderstormRain : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(thunderInterval * 0.5f, thunderInterval * 1.5f));
+            yield return new WaitForSeconds(
+                Random.Range(
+                    thunderInterval * 0.5f,
+                    thunderInterval * 1.5f
+                )
+            );
 
             Vector3 strikePos = GetThunderStrikePosition();
 
             SpawnThunderVisual(strikePos);
             PlayThunderSound(strikePos);
+
             if (flashImage != null)
             {
                 StartCoroutine(FlashScreen());
@@ -104,7 +120,12 @@ public class ThunderstormRain : MonoBehaviour
     {
         if (thunderPrefab != null)
         {
-            GameObject thunderObj = Instantiate(thunderPrefab, position, Quaternion.identity);
+            GameObject thunderObj = Instantiate(
+                thunderPrefab,
+                position,
+                Quaternion.identity
+            );
+
             Destroy(thunderObj, thunderDuration);
         }
     }
@@ -120,18 +141,22 @@ public class ThunderstormRain : MonoBehaviour
     private void ApplyThunderForceToBlocks(Vector3 strikePos)
     {
         Block[] blocks = FindObjectsOfType<Block>();
+
         foreach (Block block in blocks)
         {
             Rigidbody2D rb = block.GetComponent<Rigidbody2D>();
+
             if (rb != null)
             {
                 float distance = Vector2.Distance(rb.position, strikePos);
+
                 if (distance < thunderRadius)
                 {
                     Vector2 force = new Vector2(
                         Random.Range(-thunderForce, thunderForce),
                         thunderForce
                     );
+
                     rb.AddForce(force, ForceMode2D.Impulse);
                 }
             }
@@ -140,26 +165,65 @@ public class ThunderstormRain : MonoBehaviour
 
     IEnumerator FlashScreen()
     {
-        yield return FadeFlash(0f, 1f, flashDuration / 2f); 
-        yield return FadeFlash(1f, 0f, flashDuration / 2f);
+        yield return SingleFlash(1f, flashDuration * 0.4f);
+
+        yield return new WaitForSeconds(0.03f);
+
+        yield return SingleFlash(0.6f, flashDuration * 0.6f);
     }
 
-    private IEnumerator FadeFlash(float startAlpha, float endAlpha, float duration)
+    IEnumerator SingleFlash(float maxStrength, float duration)
     {
         float t = 0f;
+
         while (t < duration)
         {
             t += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, endAlpha, t / duration);
-            flashImage.color = new Color(1f, 1f, 1f, alpha);
+
+            float strength;
+
+            if (t < duration * 0.25f)
+            {
+                strength = Mathf.Lerp(
+                    0f,
+                    maxStrength,
+                    t / (duration * 0.25f)
+                );
+            }
+            else
+            {
+                strength = Mathf.Lerp(
+                    maxStrength,
+                    0f,
+                    (t - duration * 0.25f) / (duration * 0.75f)
+                );
+            }
+
+            if (flashMaterial != null)
+            {
+                flashMaterial.SetFloat("_FlashStrength", strength);
+            }
+
             yield return null;
         }
-        flashImage.color = new Color(1f, 1f, 1f, endAlpha);
+
+        if (flashMaterial != null)
+        {
+            flashMaterial.SetFloat("_FlashStrength", 0f);
+        }
     }
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(new Vector3((spawnRangeX.x + spawnRangeX.y) / 2, 0f, 0f), thunderRadius);
+
+        Gizmos.DrawWireSphere(
+            new Vector3(
+                (spawnRangeX.x + spawnRangeX.y) / 2,
+                0f,
+                0f
+            ),
+            thunderRadius
+        );
     }
 }

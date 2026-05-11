@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 461337748}
   - component: {fileID: 461337747}
   m_Layer: 5
-  m_Name: Pidgeon
+  m_Name: Original
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -354.3, y: -78.186}
+  m_AnchoredPosition: {x: -350.4, y: -82}
   m_SizeDelta: {x: 76.5778, y: 72.6814}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &461337747
@@ -328,9 +328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 3c67b13987c28c14ab1481e6153d5f29, type: 3}
-  - {fileID: 21300000, guid: 02d36d46ea4862143b612c2477499b60, type: 3}
-  clickSound: {fileID: 8300000, guid: a3d50406241a55f4ab68f646036b07ce, type: 3}
+  - {fileID: 21300000, guid: 6440ca74a5bdfa44da4e57820340bc33, type: 3}
+  - {fileID: 21300000, guid: 6d0b11cdb0de3134ba6387dc74633712, type: 3}
+  clickSound: {fileID: 8300000, guid: 2ac8f53a497ac804da3246e11fbe5986, type: 3}
 --- !u!114 &461337750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c67b13987c28c14ab1481e6153d5f29, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6440ca74a5bdfa44da4e57820340bc33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
