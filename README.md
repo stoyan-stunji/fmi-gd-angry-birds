@@ -203,6 +203,7 @@
 - New Shader Effects:
   - Added new Falling Snow Shader for levels with Hailstorm;
   - Added new Falling Fire Sparks Shader for levels with Firestorm;
+  - Updated the Thunderstruck flashing in levels with a Thunderstorm to use a new Shader;
   - Added a new bird: 
 
 <img src="Assets/Sprites/the_original.png" width="60" height="60">
