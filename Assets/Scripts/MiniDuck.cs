@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class MiniDuck : BaseBird
+public class MiniDuck : BirdBase
 {
     protected override void Awake()
     {
         base.Awake();
-
         launched = true;
         rb.isKinematic = false;
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         powered = true;
     }

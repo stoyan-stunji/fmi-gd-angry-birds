@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public class Boar : MonoBehaviour
+public class Boar :
+    MonoBehaviour,
+    IDestroyable
 {
     public int health = 2;
+
     public Sprite idleSprite;
     public Sprite hurtSprite;
 
@@ -12,6 +15,8 @@ public class Boar : MonoBehaviour
 
     private SpriteRenderer sr;
     private AudioSource audioSource;
+    public float CurrentHealth => health;
+    public float MaxHealth => 2f;
 
     void Start()
     {
@@ -27,13 +32,13 @@ public class Boar : MonoBehaviour
         if (impact > 2f)
         {
             PlaySound(collisionSfx);
-            TakeDamage();
+            TakeDamage(1f);
         }
     }
 
-    void TakeDamage()
+    public void TakeDamage(float amount)
     {
-        health--;
+        health -= Mathf.RoundToInt(amount);
 
         if (health == 1)
         {
@@ -44,6 +49,12 @@ public class Boar : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void ResetState()
+    {
+        health = 2;
+        sr.sprite = idleSprite;
     }
 
     void Die()

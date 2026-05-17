@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Chicken : BaseBird
+public class Chicken : BirdBase
 {
     public GameObject eggBombPrefab;
 
@@ -9,7 +9,6 @@ public class Chicken : BaseBird
     public Sprite powerSprite;
 
     public float flyUpForce = 6f;
-
     protected override void Awake()
     {
         base.Awake();
@@ -22,12 +21,11 @@ public class Chicken : BaseBird
         sr.sprite = launchedSprite;
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         powered = true;
         sr.sprite = powerSprite;
         DropEgg();
-
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(Vector2.up * flyUpForce, ForceMode2D.Impulse);
     }
@@ -40,17 +38,12 @@ public class Chicken : BaseBird
             return;
         }
 
-        GameObject egg = Instantiate(
-            eggBombPrefab,
-            transform.position,
-            Quaternion.identity
-        );
-
+        GameObject egg = Instantiate(eggBombPrefab, transform.position, Quaternion.identity);
         Rigidbody2D eggRb = egg.GetComponent<Rigidbody2D>();
 
         if (eggRb != null)
         {
-            eggRb.velocity = new Vector2(rb.velocity.x, -2f);
+            eggRb.velocity =new Vector2(rb.velocity.x, -2f);
         }
 
         if (manager != null && manager.cameraFollow != null)

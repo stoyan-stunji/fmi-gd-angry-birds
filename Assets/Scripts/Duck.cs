@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Duck : BaseBird
+public class Duck : BirdBase
 {
     public GameObject miniDuckPrefab;
 
@@ -22,7 +22,7 @@ public class Duck : BaseBird
         sr.sprite = launchedSprite;
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         SetPowerState();
         GameObject firstDuck = SpawnMiniDucks();
@@ -41,11 +41,7 @@ public class Duck : BaseBird
 
         for (int i = 0; i < splitCount; i++)
         {
-            GameObject mini = Instantiate(
-                miniDuckPrefab,
-                transform.position,
-                Quaternion.identity
-            );
+            GameObject mini = Instantiate(miniDuckPrefab, transform.position,Quaternion.identity);
 
             if (i == 0)
             {
@@ -55,14 +51,9 @@ public class Duck : BaseBird
             Rigidbody2D miniRb = mini.GetComponent<Rigidbody2D>();
             miniRb.isKinematic = false;
 
-            Vector2 spread = new Vector2(
-                Random.Range(-2f, 2f),
-                Random.Range(0.5f, 2f)
-            );
-
+            Vector2 spread = new Vector2(Random.Range(-2f, 2f), Random.Range(0.5f, 2f));
             miniRb.velocity = rb.velocity + spread;
-
-            BaseBird miniBird = mini.GetComponent<BaseBird>();
+            IBird miniBird = mini.GetComponent<IBird>();
             miniBird.SetManager(manager);
         }
 
@@ -75,7 +66,6 @@ public class Duck : BaseBird
         {
             manager.cameraFollow.SetTarget(firstDuck.transform);
         }
-
         Destroy(gameObject);
     }
 }

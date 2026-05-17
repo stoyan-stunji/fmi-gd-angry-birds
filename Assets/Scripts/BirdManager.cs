@@ -7,13 +7,13 @@ public class BirdManager : MonoBehaviour
     public Slingshot slingshot;
     public CameraFollow cameraFollow;
 
-    public List<BaseBird> birdPrefabs;
+    public List<BirdBase> birdPrefabs;
     public Transform[] queuePositions;
 
     [Header("UI")]
     public Image[] birdIcons;
 
-    private List<BaseBird> spawnedBirds = new List<BaseBird>();
+    private List<IBird> spawnedBirds = new List<IBird>();
     private int currentBird = 0;
 
     void Start()
@@ -28,11 +28,7 @@ public class BirdManager : MonoBehaviour
         for (int i = 0; i < birdPrefabs.Count; i++)
         {
             Vector3 pos = queuePositions[Mathf.Min(i, queuePositions.Length - 1)].position;
-            BaseBird bird = Instantiate(
-                birdPrefabs[i],
-                pos,
-                Quaternion.identity
-            );
+            BirdBase bird = Instantiate(birdPrefabs[i], pos, Quaternion.identity);
             bird.SetManager(this);
             spawnedBirds.Add(bird);
         }
@@ -47,11 +43,14 @@ public class BirdManager : MonoBehaviour
             return;
         }
 
-        BaseBird bird = spawnedBirds[currentBird];
-        bird.transform.position = slingshot.launchPoint.position;
+        IBird bird = spawnedBirds[currentBird];
+        Transform birdTransform = ((MonoBehaviour)bird).transform;
+        birdTransform.position = slingshot.launchPoint.position;
+
         slingshot.SetBird(bird);
-        cameraFollow.SetTarget(bird.transform);
+        cameraFollow.SetTarget(birdTransform);
         currentBird++;
+
         UpdateQueuePositions();
         UpdateBirdUI();
     }
@@ -66,22 +65,18 @@ public class BirdManager : MonoBehaviour
                 break;
             }
 
-            spawnedBirds[i].transform.position = queuePositions[queueIndex].position;
+            Transform birdTransform = ((MonoBehaviour)spawnedBirds[i]).transform;
+            birdTransform.position = queuePositions[queueIndex].position;
         }
     }
 
-    public void AddBirdToQueue(BaseBird newBirdPrefab)
+    public void AddBirdToQueue(BirdBase newBirdPrefab)
     {
-        Vector3 pos = queuePositions[Mathf.Min(spawnedBirds.Count, queuePositions.Length - 1)].position;
-
-        BaseBird bird = Instantiate(
-            newBirdPrefab,
-            pos,
-            Quaternion.identity
-        );
-
+        Vector3 pos = queuePositions[Mathf.Min(spawnedBirds.Count,queuePositions.Length - 1)].position;
+        BirdBase bird = Instantiate(newBirdPrefab, pos, Quaternion.identity);
         bird.SetManager(this);
         spawnedBirds.Add(bird);
+
         UpdateQueuePositions();
         UpdateBirdUI();
     }

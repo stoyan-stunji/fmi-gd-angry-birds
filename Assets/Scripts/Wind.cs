@@ -1,17 +1,31 @@
 using UnityEngine;
 
-public class ConstantWind : MonoBehaviour
+public class Wind : MonoBehaviour
 {
     [Header("Wind Settings")]
-    public Vector2 windForce = new Vector2(5f, 0f);
-    public bool affectBlocks = true;
-    public bool affectBirds = true;
+    public Vector2 windForce =
+        new Vector2(5f, 0f);
 
-    [Header("Sound Settings")]
+    [Header("Filtering")]
+    public bool affectBirds = true;
+    public bool affectBlocks = true;
+
+    [Header("Audio")]
     public AudioClip windSfx;
+
     private AudioSource audioSource;
 
     void Awake()
+    {
+        SetupAudio();
+    }
+
+    void FixedUpdate()
+    {
+        ApplyWind();
+    }
+
+    void SetupAudio()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.loop = true;
@@ -24,40 +38,37 @@ public class ConstantWind : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void ApplyWind()
     {
-        AffectBirds();
-        AffectBlocks();
-    }
+        MonoBehaviour[] objects = FindObjectsOfType<MonoBehaviour>();
 
-    void AffectBirds()
-    {
-        if (affectBirds)
+        foreach (MonoBehaviour obj in objects)
         {
-            BaseBird[] birds = FindObjectsOfType<BaseBird>();
-            foreach (BaseBird bird in birds)
+            IWindAware windAware = obj as IWindAware;
+            if (windAware == null)
             {
-                Rigidbody2D rb = bird.GetComponent<Rigidbody2D>();
-                if (rb != null && !rb.isKinematic && rb.velocity.magnitude > 0.1f)
-                {
-                    rb.AddForce(windForce, ForceMode2D.Force);
-                }
+                continue;
             }
-        }
-    }
 
-    void AffectBlocks()
-    {
-        if (affectBlocks)
-        {
-            Rigidbody2D[] blocks = FindObjectsOfType<Rigidbody2D>();
-            foreach (Rigidbody2D rb in blocks)
+            bool isBird = obj is BirdBase;
+            bool isBlock = obj is Block;
+
+            if (isBird && !affectBirds)
             {
-                if (rb != null && !rb.isKinematic)
-                {
-                    rb.AddForce(windForce, ForceMode2D.Force);
-                }
+                continue;
             }
+
+            if (isBlock && !affectBlocks)
+            {
+                continue;
+            }
+
+            if (!windAware.CanBeAffectedByWind())
+            {
+                continue;
+            }
+
+            windAware.Rigidbody.AddForce(windForce, ForceMode2D.Force);
         }
     }
 }

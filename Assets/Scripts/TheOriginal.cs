@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class TheOriginal : BaseBird
+public class TheOriginal : BirdBase
 {
     [Header("Sprites")]
     public Sprite idleSprite;
@@ -21,7 +21,6 @@ public class TheOriginal : BaseBird
     protected override void Awake()
     {
         base.Awake();
-
         if (idleSprite != null)
         {
             sr.sprite = idleSprite;
@@ -32,14 +31,13 @@ public class TheOriginal : BaseBird
     public override void Launch(Vector2 force)
     {
         base.Launch(force);
-
         if (launchedSprite != null)
         {
             sr.sprite = launchedSprite;
         }
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         if (powered)
         {
@@ -66,9 +64,7 @@ public class TheOriginal : BaseBird
     {
         rb.velocity = Vector2.zero;
         rb.gravityScale = 0f;
-
         yield return new WaitForSeconds(0.4f);
-
         float lockedX = transform.position.x;
         rb.gravityScale = 6f;
 
@@ -76,63 +72,43 @@ public class TheOriginal : BaseBird
         {
             rb.velocity = new Vector2(0f, rb.velocity.y);
 
-            transform.position = new Vector3(
-                lockedX,
-                transform.position.y,
-                transform.position.z
-            );
+            transform.position = new Vector3(lockedX, transform.position.y, transform.position.z);
 
             if (rb.velocity.y < -12f && IsGrounded())
             {
                 DoImpactDamage();
                 break;
             }
-
             yield return null;
         }
 
         yield return new WaitForSeconds(0.2f);
-
         manager.LoadNextBird();
         Destroy(gameObject);
     }
 
     bool IsGrounded()
     {
-        return Physics2D.Raycast(
-            transform.position,
-            Vector2.down,
-            groundCheckDistance,
-            LayerMask.GetMask("Ground")
-        );
+        return Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, LayerMask.GetMask("Ground"));
     }
 
     void DoImpactDamage()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(
-            transform.position,
-            impactRadius
-        );
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position,impactRadius);
 
         foreach (Collider2D hit in hits)
         {
             Rigidbody2D targetRb = hit.attachedRigidbody;
+
             if (targetRb == null || targetRb == rb)
             {
                 continue;
             }
 
             Vector2 dir = (targetRb.position - (Vector2)transform.position).normalized;
-
-            targetRb.AddForce(dir * impactForce, ForceMode2D.Impulse);
-
-            hit.SendMessage(
-                "TakeDamage",
-                impactForce,
-                SendMessageOptions.DontRequireReceiver
-            );
+            targetRb.AddForce(dir * impactForce,ForceMode2D.Impulse);
+            hit.SendMessage("TakeDamage", impactForce, SendMessageOptions.DontRequireReceiver);
         }
-
         CameraShake();
     }
 
@@ -154,7 +130,7 @@ public class TheOriginal : BaseBird
         while (t < 0.25f)
         {
             t += Time.deltaTime;
-            cam.transform.position = start + (Vector3)Random.insideUnitCircle * 0.15f;
+            cam.transform.position = start +(Vector3)Random.insideUnitCircle * 0.15f;
             yield return null;
         }
 

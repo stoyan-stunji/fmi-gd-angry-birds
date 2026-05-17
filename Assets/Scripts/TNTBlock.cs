@@ -44,6 +44,7 @@ public class TNTBlock : Block
         PlayExplosionSound();
         ShowExplosionSprite();
         ApplyExplosionPhysics();
+
         Destroy(gameObject);
     }
 
@@ -63,6 +64,7 @@ public class TNTBlock : Block
         }
 
         GameObject spriteObj = new GameObject("ExplosionSprite");
+
         spriteObj.transform.position = transform.position;
         spriteObj.transform.localScale = Vector3.one * explosionSpriteScale;
 
@@ -88,6 +90,7 @@ public class TNTBlock : Block
     private void ApplyForceToRigidbody(Collider2D col)
     {
         Rigidbody2D rb = col.attachedRigidbody;
+
         if (rb == null)
         {
             return;
@@ -95,11 +98,9 @@ public class TNTBlock : Block
 
         Vector2 direction = rb.position - (Vector2)transform.position;
         float distance = direction.magnitude;
-
         float forcePercent = 1 - (distance / explosionRadius);
         float finalForce = explosionForce * forcePercent;
-
-        rb.AddForce(direction.normalized * finalForce, ForceMode2D.Impulse);
+        rb.AddForce(direction.normalized * finalForce,ForceMode2D.Impulse);
         rb.velocity = Vector2.ClampMagnitude(rb.velocity, 15f);
     }
 

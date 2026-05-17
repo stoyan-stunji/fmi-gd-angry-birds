@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class Peacock : BaseBird
+public class Peacock : BirdBase
 {
     public float speedMultiplier = 2f;
+
     public Sprite idleSprite;
     public Sprite launchedSprite;
     public Sprite powerSprite;
@@ -19,7 +20,7 @@ public class Peacock : BaseBird
         sr.sprite = launchedSprite;
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         powered = true;
 

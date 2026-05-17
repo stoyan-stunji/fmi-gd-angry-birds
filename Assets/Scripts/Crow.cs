@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Crow : BaseBird
+public class Crow : BirdBase
 {
-    public GameObject blueBombPrefab;  // 5%
-    public GameObject blueRockPrefab;  // 45%
-    public GameObject blueStrawPrefab; // 50%
+    public GameObject blueBombPrefab;
+    public GameObject blueRockPrefab;
+    public GameObject blueStrawPrefab;
 
     public float spinSpeed = 100f;
     public float shootForce = 5f;
@@ -29,26 +29,24 @@ public class Crow : BaseBird
     protected override void Update()
     {
         base.Update();
-
         if (launched)
         {
-            transform.Rotate(Vector3.forward, spinSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.forward,spinSpeed * Time.deltaTime);
         }
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         powered = true;
         sr.sprite = powerSprite;
-
         ShootFromBeak();
     }
 
     void ShootFromBeak()
     {
         GameObject prefabToSpawn = null;
-
         float rand = Random.Range(0f, 1f);
+
         if (rand < 0.05f)
         {
             prefabToSpawn = blueBombPrefab;
@@ -69,13 +67,13 @@ public class Crow : BaseBird
         }
 
         Vector3 spawnPos = transform.position + transform.up * beakOffset;
-
         GameObject obj = Instantiate(prefabToSpawn, spawnPos, Quaternion.identity);
         Rigidbody2D objRb = obj.GetComponent<Rigidbody2D>();
+
         if (objRb != null)
         {
-            objRb.velocity = rb.velocity; 
-            objRb.AddForce(transform.up * shootForce, ForceMode2D.Impulse);
+            objRb.velocity = rb.velocity;
+            objRb.AddForce(transform.up * shootForce,ForceMode2D.Impulse);
         }
     }
 }

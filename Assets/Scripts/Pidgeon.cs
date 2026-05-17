@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pigeon : BaseBird
+public class Pigeon : BirdBase
 {
     public Sprite idleSprite;
     public Sprite launchedSprite;
@@ -21,13 +21,11 @@ public class Pigeon : BaseBird
         sr.sprite = launchedSprite;
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
         powered = true;
-
         transform.localScale *= expandScale;
         rb.AddForce(Vector2.up * expandForce, ForceMode2D.Impulse);
-
         sr.sprite = powerSprite;
     }
 }

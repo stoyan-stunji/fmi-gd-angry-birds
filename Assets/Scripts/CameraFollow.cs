@@ -41,14 +41,8 @@ public class CameraFollow : MonoBehaviour
     void PlayIntro()
     {
         introTimer += Time.deltaTime;
-
         Vector3 desiredPosition = target.position + offset;
-
-        transform.position = Vector3.Lerp(
-            levelOverviewPoint.position,
-            desiredPosition,
-            introTimer / introDuration
-        );
+        transform.position = Vector3.Lerp(levelOverviewPoint.position, desiredPosition, introTimer / introDuration);
 
         if (introTimer >= introDuration)
         {
@@ -59,12 +53,7 @@ public class CameraFollow : MonoBehaviour
     void FollowTarget()
     {
         Vector3 desiredPosition = target.position + offset;
-
-        transform.position = Vector3.Lerp(
-            transform.position,
-            desiredPosition,
-            speed * Time.deltaTime
-        );
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, speed * Time.deltaTime);
     }
 
     public void SetTarget(Transform newTarget)

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Chick : BaseBird
+public class Chick : BirdBase
 {
     public Sprite idleSprite;
     public Sprite launchedSprite;
@@ -17,9 +17,8 @@ public class Chick : BaseBird
         sr.sprite = launchedSprite;
     }
 
-    protected override void ActivatePower()
+    public override void ActivatePower()
     {
-        // Does nothing by design
         powered = true;
     }
 }

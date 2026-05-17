@@ -1,7 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class BaseBird : MonoBehaviour
+public abstract class BirdBase :
+    MonoBehaviour,
+    IBird,
+    IWindAware
 {
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
@@ -12,24 +15,26 @@ public abstract class BaseBird : MonoBehaviour
     [SerializeField] protected AudioClip powerSfx;
     [SerializeField] protected AudioClip collisionSfx;
 
-    protected bool launched = false;
-    protected bool powered = false;
-    protected bool waitingForStop = false;
-
-    protected bool collisionSoundPlayed = false;
+    protected bool launched;
+    protected bool powered;
+    protected bool waitingForStop;
+    protected bool collisionSoundPlayed;
 
     protected BirdManager manager;
+
+    public bool IsLaunched => launched;
+    public bool IsPowered => powered;
+    public Rigidbody2D Rigidbody => rb;
 
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
-
         rb.isKinematic = true;
     }
 
-    public void SetManager(BirdManager m)
+    public virtual void SetManager(BirdManager m)
     {
         manager = m;
     }
@@ -39,7 +44,6 @@ public abstract class BaseBird : MonoBehaviour
         rb.isKinematic = false;
         rb.AddForce(force, ForceMode2D.Impulse);
         launched = true;
-
         PlaySound(launchSfx);
     }
 
@@ -58,29 +62,33 @@ public abstract class BaseBird : MonoBehaviour
         }
     }
 
-    protected abstract void ActivatePower();
+    public abstract void ActivatePower();
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        if (launched)
+        if (!launched)
         {
-            if (!collisionSoundPlayed)
-            {
-                PlaySound(collisionSfx);
-                collisionSoundPlayed = true;
-            }
-
-            waitingForStop = true;
+            return;
         }
+
+        if (!collisionSoundPlayed)
+        {
+            PlaySound(collisionSfx);
+            collisionSoundPlayed = true;
+        }
+        waitingForStop = true;
     }
 
-    IEnumerator ReturnNextBird()
+    protected virtual IEnumerator ReturnNextBird()
     {
         yield return new WaitForSeconds(2f);
-
-
         manager.LoadNextBird();
         Destroy(gameObject);
+    }
+
+    public virtual bool CanBeAffectedByWind()
+    {
+        return rb != null && !rb.isKinematic && rb.velocity.magnitude > 0.1f;
     }
 
     protected void PlaySound(AudioClip clip)

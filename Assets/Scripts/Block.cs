@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class Block : MonoBehaviour
+public class Block :
+    MonoBehaviour,
+    IWindAware,
+    IDestroyable
 {
     [Header("Sprites")]
     public Sprite normalSprite;
@@ -8,21 +11,30 @@ public class Block : MonoBehaviour
 
     [Header("Health Settings")]
     public float maxHealth = 10f;
+
     public float currentHealth;
 
     [Header("Impact Settings")]
     public float minImpactToDamage = 3f;
+
     public float damageMultiplier = 1f;
 
     private SpriteRenderer sr;
+    private Rigidbody2D rb;
+
     private float spawnTime;
+    public Rigidbody2D Rigidbody => rb;
+    public float CurrentHealth => currentHealth;
+    public float MaxHealth => maxHealth;
 
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.sprite = normalSprite;
+        rb = GetComponent<Rigidbody2D>();
 
+        sr.sprite = normalSprite;
         currentHealth = maxHealth;
+
         spawnTime = Time.time;
     }
 
@@ -34,29 +46,38 @@ public class Block : MonoBehaviour
         }
 
         float impact = collision.relativeVelocity.magnitude;
+
         if (impact < minImpactToDamage)
         {
             return;
         }
+
         TakeDamage(impact * damageMultiplier);
     }
 
     public virtual void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        if (currentHealth < maxHealth / 2 && damagedSprite != null)
+
+        if (currentHealth < maxHealth / 2f && damagedSprite != null)
         {
             sr.sprite = damagedSprite;
         }
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0f)
         {
             Destroy(gameObject);
         }
     }
-    public void ResetBlock()
+
+    public void ResetState()
     {
         currentHealth = maxHealth;
         sr.sprite = normalSprite;
+    }
+
+    public bool CanBeAffectedByWind()
+    {
+        return rb != null && !rb.isKinematic;
     }
 }

@@ -66,17 +66,13 @@ public class Hailstorm : MonoBehaviour
             float interval = Random.Range(minInterval, maxInterval);
 
             yield return ZoomCamera(mainCamera.orthographicSize, zoomOutSize);
-
             yield return FadeSnow(0f, snowIntensity);
 
             SpawnMultipleDebris();
-
             PlayDebrisSound();
 
             yield return new WaitForSeconds(interval);
-
             yield return FadeSnow(snowIntensity, 0f);
-
             yield return ZoomCamera(mainCamera.orthographicSize, originalCamSize);
         }
     }
@@ -85,12 +81,7 @@ public class Hailstorm : MonoBehaviour
     {
         for (int i = 0; i < hailPerSpawn; i++)
         {
-            Vector3 spawnPos = new Vector3(
-                Random.Range(spawnRangeX.x, spawnRangeX.y),
-                spawnHeight + Random.Range(0f, 2f),
-                0
-            );
-
+            Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX.x, spawnRangeX.y), spawnHeight + Random.Range(0f, 2f), 0);
             Instantiate(hailPrefab, spawnPos, Quaternion.identity);
         }
     }
@@ -111,17 +102,10 @@ public class Hailstorm : MonoBehaviour
         }
 
         float t = 0f;
-
         while (t < 1f)
         {
             t += Time.deltaTime * zoomSpeed;
-
-            mainCamera.orthographicSize = Mathf.Lerp(
-                startSize,
-                targetSize,
-                t
-            );
-
+            mainCamera.orthographicSize = Mathf.Lerp(startSize, targetSize, t);
             yield return null;
         }
 
@@ -136,15 +120,11 @@ public class Hailstorm : MonoBehaviour
         }
 
         float t = 0f;
-
         while (t < 1f)
         {
             t += Time.deltaTime * snowFadeSpeed;
-
             float value = Mathf.Lerp(start, end, t);
-
             snowMaterial.SetFloat("_SnowIntensity", value);
-
             yield return null;
         }
 

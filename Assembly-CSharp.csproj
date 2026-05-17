@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{458E6A39-8C0F-E69E-0EC2-7475F30DB4ED}</ProjectGuid>
+    <ProjectGuid>{FBB30AFF-0527-48F6-C279-8B7E03D69C00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -68,9 +68,11 @@
     <Compile Include="Assets\Scripts\ThunderstormRain.cs" />
     <Compile Include="Assets\Scripts\BaseBird.cs" />
     <Compile Include="Assets\Scripts\Duck.cs" />
+    <Compile Include="Assets\Scripts\IDestroyable.cs" />
     <Compile Include="Assets\Scripts\BirdCageBlock.cs" />
     <Compile Include="Assets\Scripts\BirdUIManager.cs" />
     <Compile Include="Assets\Scripts\Peacock.cs" />
+    <Compile Include="Assets\Scripts\IBird.cs" />
     <Compile Include="Assets\Scripts\SpriteChangerUI.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Slingshot.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Assets\Scripts\Pidgeon.cs" />
     <Compile Include="Assets\Scripts\BlueBomb.cs" />
     <Compile Include="Assets\Scripts\MiniDuck.cs" />
+    <Compile Include="Assets\Scripts\IWindAware.cs" />
     <Compile Include="Assets\Scripts\Boar.cs" />
   </ItemGroup>
   <ItemGroup>
