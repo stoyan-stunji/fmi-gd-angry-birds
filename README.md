@@ -217,6 +217,8 @@
 - Added a progression system using Unity's built-in PlayerPrefs;
 - Found an easy way to improve Game Feel - still needs touching up.
 
+<img src="presentation.png">
+
 ### Literature:
 - [The Slides From This GitHub Repo](https://github.com/Ivan-Vankov/GameDevCourse/tree/gh-pages);
 - [Game Development with Unity at FMI](https://www.youtube.com/channel/UCsBZtgJpHY6mISHcyCXRnOA);
