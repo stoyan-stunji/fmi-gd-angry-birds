@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour
     private Boar[] pigs;
     private bool gameEnded = false;
 
+    [Header("Progression")]
+    public int levelNumber = 1;
+
     void Start()
     {
         pigs = FindObjectsOfType<Boar>();
@@ -54,6 +57,9 @@ public class LevelManager : MonoBehaviour
 
         gameEnded = true;
 
+        ProgressManager.CompleteLevel(levelNumber);
+        ProgressManager.UnlockLevel(levelNumber + 1);
+
         if (winMessage != null)
         {
             winMessage.SetActive(true);
@@ -86,7 +92,7 @@ public class LevelManager : MonoBehaviour
             winMessage.SetActive(false);
         }
 
-            ShowEndLevelUI();
+        ShowEndLevelUI();
     }
 
     private void ShowEndLevelUI()

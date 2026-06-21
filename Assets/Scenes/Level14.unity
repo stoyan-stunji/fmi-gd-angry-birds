@@ -4973,8 +4973,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windForce: {x: -3, y: 0}
-  affectBlocks: 1
   affectBirds: 1
+  affectBlocks: 1
   windSfx: {fileID: 0}
 --- !u!4 &1229109620
 Transform:
@@ -5819,6 +5819,7 @@ MonoBehaviour:
   winMessage: {fileID: 501920766}
   loseMessage: {fileID: 1801391555}
   nextLevelName: Tutorial15
+  levelNumber: 24
 --- !u!1 &1433555395
 GameObject:
   m_ObjectHideFlags: 0

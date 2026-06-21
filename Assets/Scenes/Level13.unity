@@ -4598,6 +4598,7 @@ MonoBehaviour:
   winMessage: {fileID: 1355442821}
   loseMessage: {fileID: 1885654257}
   nextLevelName: Level14
+  levelNumber: 23
 --- !u!4 &1222767773
 Transform:
   m_ObjectHideFlags: 0

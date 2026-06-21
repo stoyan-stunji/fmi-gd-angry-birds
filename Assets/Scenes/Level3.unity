@@ -1953,6 +1953,7 @@ MonoBehaviour:
   winMessage: {fileID: 722475707}
   loseMessage: {fileID: 1569183000}
   nextLevelName: Tutorial4
+  levelNumber: 5
 --- !u!1 &722475707
 GameObject:
   m_ObjectHideFlags: 0

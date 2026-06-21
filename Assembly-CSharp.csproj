@@ -64,10 +64,12 @@
     <Compile Include="Assets\Scripts\QuitGame.cs" />
     <Compile Include="Assets\Scripts\Crow.cs" />
     <Compile Include="Assets\Scripts\LoadNextScene.cs" />
+    <Compile Include="Assets\Scripts\ProgressManager.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\ThunderstormRain.cs" />
     <Compile Include="Assets\Scripts\BaseBird.cs" />
     <Compile Include="Assets\Scripts\Duck.cs" />
+    <Compile Include="Assets\Scripts\LevelButton.cs" />
     <Compile Include="Assets\Scripts\IDestroyable.cs" />
     <Compile Include="Assets\Scripts\BirdCageBlock.cs" />
     <Compile Include="Assets\Scripts\BirdUIManager.cs" />

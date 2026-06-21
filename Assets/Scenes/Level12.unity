@@ -2513,6 +2513,7 @@ MonoBehaviour:
   winMessage: {fileID: 389891829}
   loseMessage: {fileID: 466010009}
   nextLevelName: Level13
+  levelNumber: 22
 --- !u!1 &727695310
 GameObject:
   m_ObjectHideFlags: 0
