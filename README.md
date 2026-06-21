@@ -212,6 +212,11 @@
     - Based on the first bird in the original Angry Birds games; 
     - However he has an ability in this game - frezees mid-air and drops down with a powerful impact.
 
+### Update 2:
+- Improved code structure. Now it follows SOLID principles;
+- Added a progression system using Unity's built-in PlayerPrefs;
+- Found an easy way to improve Game Feel - still needs touching up.
+
 ### Literature:
 - [The Slides From This GitHub Repo](https://github.com/Ivan-Vankov/GameDevCourse/tree/gh-pages);
 - [Game Development with Unity at FMI](https://www.youtube.com/channel/UCsBZtgJpHY6mISHcyCXRnOA);
