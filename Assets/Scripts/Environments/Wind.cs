@@ -50,19 +50,6 @@ public class Wind : MonoBehaviour
                 continue;
             }
 
-            bool isBird = obj is BirdBase;
-            bool isBlock = obj is Block;
-
-            if (isBird && !affectBirds)
-            {
-                continue;
-            }
-
-            if (isBlock && !affectBlocks)
-            {
-                continue;
-            }
-
             if (!windAware.CanBeAffectedByWind())
             {
                 continue;

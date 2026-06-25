@@ -60,38 +60,38 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BirdManager.cs" />
-    <Compile Include="Assets\Scripts\QuitGame.cs" />
-    <Compile Include="Assets\Scripts\Crow.cs" />
-    <Compile Include="Assets\Scripts\LoadNextScene.cs" />
-    <Compile Include="Assets\Scripts\ProgressManager.cs" />
-    <Compile Include="Assets\Scripts\Block.cs" />
-    <Compile Include="Assets\Scripts\ThunderstormRain.cs" />
-    <Compile Include="Assets\Scripts\BaseBird.cs" />
-    <Compile Include="Assets\Scripts\Duck.cs" />
-    <Compile Include="Assets\Scripts\LevelButton.cs" />
-    <Compile Include="Assets\Scripts\IDestroyable.cs" />
-    <Compile Include="Assets\Scripts\BirdCageBlock.cs" />
-    <Compile Include="Assets\Scripts\BirdUIManager.cs" />
-    <Compile Include="Assets\Scripts\Peacock.cs" />
-    <Compile Include="Assets\Scripts\IBird.cs" />
-    <Compile Include="Assets\Scripts\SpriteChangerUI.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Slingshot.cs" />
-    <Compile Include="Assets\Scripts\Wind.cs" />
-    <Compile Include="Assets\Scripts\TheOriginal.cs" />
-    <Compile Include="Assets\Scripts\Hailstorm.cs" />
-    <Compile Include="Assets\Scripts\Chick.cs" />
-    <Compile Include="Assets\Scripts\Chicken.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\Earthquake.cs" />
-    <Compile Include="Assets\Scripts\TNTBlock.cs" />
-    <Compile Include="Assets\Scripts\EggBomb.cs" />
-    <Compile Include="Assets\Scripts\Pidgeon.cs" />
-    <Compile Include="Assets\Scripts\BlueBomb.cs" />
-    <Compile Include="Assets\Scripts\MiniDuck.cs" />
-    <Compile Include="Assets\Scripts\IWindAware.cs" />
-    <Compile Include="Assets\Scripts\Boar.cs" />
+    <Compile Include="Assets\Scripts\Birds\Duck.cs" />
+    <Compile Include="Assets\Scripts\Birds\TheOriginal.cs" />
+    <Compile Include="Assets\Scripts\LevelUtilities\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\LevelUtilities\ProgressManager.cs" />
+    <Compile Include="Assets\Scripts\Birds\EggBomb.cs" />
+    <Compile Include="Assets\Scripts\Birds\Pidgeon.cs" />
+    <Compile Include="Assets\Scripts\LevelUtilities\BirdManager.cs" />
+    <Compile Include="Assets\Scripts\Destroyable\Boar.cs" />
+    <Compile Include="Assets\Scripts\SceneUtilities\LevelButton.cs" />
+    <Compile Include="Assets\Scripts\Birds\Peacock.cs" />
+    <Compile Include="Assets\Scripts\LevelUtilities\BirdUIManager.cs" />
+    <Compile Include="Assets\Scripts\Environments\Wind.cs" />
+    <Compile Include="Assets\Scripts\Destroyable\Block.cs" />
+    <Compile Include="Assets\Scripts\Environments\IWindAware.cs" />
+    <Compile Include="Assets\Scripts\Birds\Chick.cs" />
+    <Compile Include="Assets\Scripts\SceneUtilities\SpriteChangerUI.cs" />
+    <Compile Include="Assets\Scripts\Birds\MiniDuck.cs" />
+    <Compile Include="Assets\Scripts\LevelUtilities\Slingshot.cs" />
+    <Compile Include="Assets\Scripts\Birds\IBird.cs" />
+    <Compile Include="Assets\Scripts\SceneUtilities\QuitGame.cs" />
+    <Compile Include="Assets\Scripts\SceneUtilities\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Environments\Hailstorm.cs" />
+    <Compile Include="Assets\Scripts\Birds\Chicken.cs" />
+    <Compile Include="Assets\Scripts\Destroyable\BirdCageBlock.cs" />
+    <Compile Include="Assets\Scripts\Environments\Earthquake.cs" />
+    <Compile Include="Assets\Scripts\Destroyable\IDestroyable.cs" />
+    <Compile Include="Assets\Scripts\Birds\BlueBomb.cs" />
+    <Compile Include="Assets\Scripts\Birds\Crow.cs" />
+    <Compile Include="Assets\Scripts\Birds\BaseBird.cs" />
+    <Compile Include="Assets\Scripts\SceneUtilities\LoadNextScene.cs" />
+    <Compile Include="Assets\Scripts\Environments\ThunderstormRain.cs" />
+    <Compile Include="Assets\Scripts\Destroyable\TNTBlock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -100,7 +100,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\SnowOverlay.shader" />
+    <None Include="Assets\Shaders\SnowOverlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -109,7 +109,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\FireOverlay.shader" />
+    <None Include="Assets\Shaders\FireOverlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -117,7 +117,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\ThunderFlash.shader" />
+    <None Include="Assets\Shaders\ThunderFlash.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

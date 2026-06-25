@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\progressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\progressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\levelbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\idestroyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\idestroyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\wind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +29,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\tntblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tntblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\iwindaware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iwindaware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\ibird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ibird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|c:\\users\\stoyan\\desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\progressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\progressmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\earthquake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\earthquake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\levelbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\thunderstormrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,28 +91,12 @@
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadnextscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\iwindaware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iwindaware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\idestroyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\idestroyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\ibird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ibird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\hailstorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hailstorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\eggbomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\eggbomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\earthquake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\earthquake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\crow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,20 +115,8 @@
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\bluebomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bluebomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birduimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB30AFF-0527-48F6-C279-8B7E03D69C00}|Assembly-CSharp.csproj|C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\assets\\scripts\\birdmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,11 +138,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "LevelButton.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\LevelButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelButton.cs",
@@ -150,12 +150,11 @@
               "RelativeToolTip": "Assets\\Scripts\\LevelButton.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:48:17.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-21T16:48:17.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "ProgressManager.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\ProgressManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ProgressManager.cs",
@@ -168,31 +167,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Wind.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Wind.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Wind.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Wind.cs",
               "RelativeToolTip": "Assets\\Scripts\\Wind.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAQwEkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:22:00.031Z"
+              "WhenOpened": "2026-06-21T16:22:00.031Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TNTBlock.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\TNTBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TNTBlock.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\TNTBlock.cs",
               "RelativeToolTip": "Assets\\Scripts\\TNTBlock.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAwwIEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:58.691Z"
+              "WhenOpened": "2026-06-21T16:21:58.691Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "ThunderstormRain.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\ThunderstormRain.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ThunderstormRain.cs",
@@ -204,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "TheOriginal.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\TheOriginal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TheOriginal.cs",
@@ -216,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "SpriteChangerUI.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\SpriteChangerUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpriteChangerUI.cs",
@@ -228,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Slingshot.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Slingshot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Slingshot.cs",
@@ -240,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "QuitGame.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\QuitGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\QuitGame.cs",
@@ -252,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Pidgeon.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Pidgeon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pidgeon.cs",
@@ -264,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Peacock.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Peacock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Peacock.cs",
@@ -276,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "MiniDuck.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\MiniDuck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MiniDuck.cs",
@@ -288,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "LoadNextScene.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\LoadNextScene.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LoadNextScene.cs",
@@ -300,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
@@ -312,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "IWindAware.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\IWindAware.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IWindAware.cs",
@@ -320,11 +321,12 @@
               "RelativeToolTip": "Assets\\Scripts\\IWindAware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:29.088Z"
+              "WhenOpened": "2026-06-21T16:21:29.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "IDestroyable.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\IDestroyable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IDestroyable.cs",
@@ -332,11 +334,12 @@
               "RelativeToolTip": "Assets\\Scripts\\IDestroyable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:27.533Z"
+              "WhenOpened": "2026-06-21T16:21:27.533Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "IBird.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\IBird.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IBird.cs",
@@ -344,11 +347,12 @@
               "RelativeToolTip": "Assets\\Scripts\\IBird.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:26.171Z"
+              "WhenOpened": "2026-06-21T16:21:26.171Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "Hailstorm.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Hailstorm.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hailstorm.cs",
@@ -360,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "EggBomb.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\EggBomb.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EggBomb.cs",
@@ -372,19 +376,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 10,
               "Title": "Earthquake.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Earthquake.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Earthquake.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Earthquake.cs",
               "RelativeToolTip": "Assets\\Scripts\\Earthquake.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAADwv20AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:21.722Z"
+              "WhenOpened": "2026-06-21T16:21:21.722Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Duck.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Duck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Duck.cs",
@@ -396,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Crow.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Crow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Crow.cs",
@@ -408,19 +413,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 0,
               "Title": "Chicken.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Chicken.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chicken.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Chicken.cs",
               "RelativeToolTip": "Assets\\Scripts\\Chicken.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAADwvzUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswBsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:16.48Z"
+              "WhenOpened": "2026-06-21T16:21:16.48Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Chick.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Chick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chick.cs",
@@ -432,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
@@ -444,19 +450,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 2,
               "Title": "Boar.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Boar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Boar.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Boar.cs",
               "RelativeToolTip": "Assets\\Scripts\\Boar.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAswEgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:11.714Z"
+              "WhenOpened": "2026-06-21T16:21:11.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "BlueBomb.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\BlueBomb.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BlueBomb.cs",
@@ -468,27 +475,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 3,
               "Title": "Block.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Block.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Block.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\Block.cs",
               "RelativeToolTip": "Assets\\Scripts\\Block.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwFIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwFIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:08.635Z"
+              "WhenOpened": "2026-06-21T16:21:08.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 1,
               "Title": "BirdUIManager.cs",
               "DocumentMoniker": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\BirdUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BirdUIManager.cs",
               "ToolTip": "C:\\Users\\Stoyan\\Desktop\\angry-birds\\fmi-gd-angry-birds\\Assets\\Scripts\\BirdUIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\BirdUIManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvyUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T16:21:07.017Z"
+              "WhenOpened": "2026-06-21T16:21:07.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
